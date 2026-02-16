@@ -9,14 +9,16 @@
     --color-primary-dark: #B85F3A;
     --color-secondary: #8B4E3F;
     --color-accent: #E8A87C;
-    --color-light: #F5E6D3;
+    /*--color-light: #F5E6D3;*/
+    --color-light: #f9f9f9; /* <-- édito */
     --color-dark: #2C2416;
     --color-text: #3A3125;
-    --color-white: #FFFFFF;
-    --color-bg: #FAF7F2;
+    --color-white: #555;
+    --color-bg: #F2F2F0; /* <-- background page (et quote) */
+    --color-header: var(--color-bg); /* <-- menu */
     
     /* Typographie */
-    --font-heading: 'Playfair Display', serif;
+    --font-heading: 'Lato', sans-serif;
     --font-body: 'Lato', sans-serif;
     
     /* Espacements */
@@ -139,7 +141,7 @@ strong {
    =================================== */
 
 .header {
-    background-color: var(--color-white);
+    background-color: var(--color-header);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -297,7 +299,7 @@ strong {
 .hero-content {
     position: relative;
     z-index: 1;
-    color: var(--color-white);
+    color: var(--color-bg);
     padding: var(--spacing-lg) var(--spacing-md);
     max-width: 900px;
     margin: 0 auto;
@@ -305,7 +307,7 @@ strong {
 
 .hero-title {
     font-size: clamp(2.5rem, 6vw, 4.5rem);
-    color: var(--color-white);
+    color: var(--color-bg);
     margin-bottom: var(--spacing-sm);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     animation: fadeInUp 1s ease-out;
@@ -396,6 +398,20 @@ strong {
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
 }
 
+.btn-secondary-outlined {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-secondary-outlined:hover {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(142, 142, 142, 0.3);
+}
+
 /* Version pour fond clair */
 .btn-secondary.dark {
     color: var(--color-primary);
@@ -413,7 +429,7 @@ strong {
 
 .quote-section {
     padding: var(--spacing-lg) 0;
-    background-color: var(--color-light);
+    background-color: var(--color-bg);
 }
 
 .main-quote {
@@ -445,8 +461,19 @@ strong {
 
 .edito-section {
     padding: var(--spacing-xl) 0;
-    background-color: var(--color-white);
+    background-color: var(--color-light);
 }
+
+.bottom-shadow:after {
+    content: "";
+    display: block;
+    height: 8px;
+    background: transparent;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(   startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  }
 
 .edito-content {
     max-width: 900px;
@@ -1275,7 +1302,7 @@ strong {
     grid-template-columns: 1fr 2fr;
     gap: var(--spacing-lg);
     margin-bottom: var(--spacing-xl);
-    background: white;
+    background: var(--color-light);
     border-radius: 20px;
     padding: var(--spacing-lg);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -1289,7 +1316,7 @@ strong {
 
 .artist-card.featured {
     border: 3px solid var(--color-primary);
-    background: linear-gradient(to bottom right, white, #FFF8F3);
+    background: var(--color-light);
 }
 
 .artist-card.workshop {
@@ -1307,13 +1334,14 @@ strong {
 /* Artist Image */
 .artist-image {
     position: relative;
+    display: flex;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .artist-image img {
-    width: 100%;
+    /*width: 100%;*/
     height: 100%;
     object-fit: cover;
     display: block;
@@ -1338,6 +1366,13 @@ strong {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.artist-image-header {
+    align-content: center !important;
+    /*padding: 30px;*/
+    border: none !important;
+    background: var(--color-light) !important;
 }
 
 .workshop-badge {
@@ -3239,4 +3274,196 @@ strong {
     }
 }
 
+/* =============================================
+   Page Bénévoles - Styles
+   ============================================= */
 
+   .benevoles-page {
+    padding: 6rem 0 4rem;
+    min-height: 100vh;
+    background: linear-gradient(135deg, 
+        var(--color-light) 0%, 
+        rgba(255,255,255,0.9) 100%);
+}
+
+/* En-tête de la page */
+.page-header {
+    text-align: center;
+    margin-bottom: 5rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-header h1 {
+    color: var(--color-primary);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.page-subtitle {
+    color: var(--color-accent);
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.page-quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--color-primary);
+    background: rgba(255,255,255,0.8);
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--color-accent);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.page-thanks {
+    font-size: 1.1rem;
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+/* Grille des bénévoles */
+.benevoles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+/* Carte bénévole */
+.benevole-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.benevole-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+/* Photo du bénévole */
+.benevole-photo {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+.benevole-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+.benevole-card:hover .benevole-photo img {
+    transform: scale(1.02);
+}
+
+/* Contenu de la carte */
+.benevole-content {
+    padding: 2rem;
+}
+
+.benevole-name {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.benevole-role {
+    color: var(--color-accent);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-light);
+}
+
+.benevole-description {
+    color: var(--color-text);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.benevole-description p {
+    margin-bottom: 1rem;
+}
+
+.benevole-description p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .benevoles-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .benevoles-page {
+        padding: 5rem 0 3rem;
+    }
+    
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .page-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .page-quote {
+        font-size: 1.1rem;
+        padding: 1.5rem;
+    }
+    
+    .benevoles-grid {
+        /*grid-template-columns: 1fr;*/
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+    }
+    
+    .benevole-photo {
+        height: 350px;
+    }
+    
+    .benevole-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .page-quote {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    
+    .benevole-name {
+        font-size: 1.2rem;
+    }
+    
+    .benevoles-grid {
+        gap: 1.5rem;
+    }
+}

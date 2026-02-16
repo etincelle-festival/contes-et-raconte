@@ -866,3 +866,67 @@ document.addEventListener('DOMContentLoaded', () => {
 // ===================================
 // TODO :delete logs
 console.log('🎭 Festival Contes et Raconte - Script chargé avec succès');
+
+// Gestion des bénévoles
+function loadBenevoles() {
+    const grid = document.getElementById('benevolesGrid');
+    if (!grid || !festivalData.benevoles) return;
+  
+    grid.innerHTML = '';
+  
+    festivalData.benevoles.forEach(benevole => {
+      const card = document.createElement('div');
+      card.className = 'benevole-card';
+      card.setAttribute('data-benevole-id', benevole.id);
+      
+      // Tronquer la description pour l'aperçu
+      const previewText = benevole.description.length > 120 
+        ? benevole.description.substring(0, 120) + '...' 
+        : benevole.description;
+      
+      card.innerHTML = `
+        <div class="benevole-photo">
+          <img src="${benevole.photo}" 
+               alt="Photo de ${benevole.nom}" 
+               loading="lazy">
+          <div class="benevole-engagement">${benevole.engagement}</div>
+        </div>
+        <div class="benevole-info">
+          <h4>${benevole.nom}</h4>
+          <p class="benevole-role">${benevole.role}</p>
+          <p class="benevole-preview">${previewText}</p>
+        </div>
+      `;
+      
+      card.addEventListener('click', () => this.openBenevoleModal(benevole));
+      grid.appendChild(card);
+    });
+  }
+  
+  // Modal détail bénévole
+  function openBenevoleModal(benevole) {
+    const modal = document.getElementById('benevoleModal');
+    const modalPhoto = document.getElementById('modalPhoto');
+    const modalName = document.getElementById('modalName');
+    const modalRole = document.getElementById('modalRole');
+    const modalDescription = document.getElementById('modalDescription');
+    const modalMissions = document.getElementById('modalMissions');
+    
+    modalPhoto.src = benevole.photo;
+    modalPhoto.alt = `Photo de ${benevole.nom}`;
+    modalName.textContent = benevole.nom;
+    modalRole.textContent = benevole.role;
+    modalDescription.innerHTML = `
+      <p>${benevole.description}</p>
+      <p><strong>Engagement :</strong> ${benevole.engagement}</p>
+    `;
+    
+    modalMissions.innerHTML = `
+      <h4>Ses Missions</h4>
+      <ul>
+        ${benevole.missions.map(mission => `<li>${mission}</li>`).join('')}
+      </ul>
+    `;
+    
+    modal.classList.add('active');
+  }
