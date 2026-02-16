@@ -1,93 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Découvrez les bénévoles du Festival Contes et Raconte 2026">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Découvrez les bénévoles du Festival Contes et Raconte 2026"
+    />
     <title>Nos Bénévoles - Festival Contes et Raconte</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/templates/menu.js"></script>
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-brand">
-                    <a href="index.html">
-                        <h1>Contes & Raconte</h1>
-                        <span class="edition">3ème édition - 2026</span>
-                    </a>
-                </div>
-                <button class="menu-toggle" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="programme.html">Programme</a></li>
-                    <li><a href="artistes.html" class="active">Les Artistes</a></li>
-                    <li><a href="infos-pratiques.html">Infos Pratiques</a></li>
-                    <li><a href="benevoles.html">Bénévoles</a></li>
-                    <li><a href="partenaires.html">Partenaires</a></li>
-                </ul>
-            </div>
-        </nav>
+      <menu-component></menu-component>
     </header>
 
     <!-- Page Bénévoles -->
     <main class="main-content">
-        <section class="benevoles-page">
-            <div class="container">
-                <header class="page-header">
-                    <h1>Nos Bénévoles</h1>
-                    <p class="page-subtitle">Le cœur battant du festival</p>
-                    <blockquote class="page-quote">
-                        "En amont du festival, ils ont œuvré auprès de différents publics pour faire connaître les conteurs invités, ils ont cousu, cloué, peint mais aussi dansé et chanté et puis cuisiné et sont prêts à vous accueillir pour cette deuxième édition de Contes et raconte."
-                    </blockquote>
-                    <p class="page-thanks">
-                        <strong>Un grand merci à tous nos bénévoles qui font vivre ce festival ! 🙏</strong>
-                    </p>
-                </header>
+      <section class="benevoles-page">
+        <div class="container">
+          <header class="page-header">
+            <h1>Nos Bénévoles</h1>
+            <p class="page-subtitle">Le cœur battant du festival</p>
+            <blockquote class="page-quote">
+              "En amont du festival, ils ont œuvré auprès de différents publics
+              pour faire connaître les conteurs invités, ils ont cousu, cloué,
+              peint mais aussi dansé et chanté et puis cuisiné et sont prêts à
+              vous accueillir pour cette deuxième édition de Contes et raconte."
+            </blockquote>
+            <p class="page-thanks">
+              <strong
+                >Un grand merci à tous nos bénévoles qui font vivre ce festival
+                ! 🙏</strong
+              >
+            </p>
+          </header>
 
-                <!-- Grille des bénévoles -->
-                <div class="benevoles-grid" id="benevolesGrid">
-                    <!-- Les cartes seront générées par JavaScript -->
-                </div>
-            </div>
-        </section>
+          <!-- Grille des bénévoles -->
+          <div class="benevoles-grid" id="benevolesGrid">
+            <!-- Les cartes seront générées par JavaScript -->
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p>📞 07 89 33 40 63</p>
-                    <p>✉️ asso-etincelle@orange.fr</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Lieu</h3>
-                    <p>Salle Antoine Arieu</p>
-                    <p>St Germain du Puch</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Festival 2025</h3>
-                    <p>27, 28 & 29 Mars</p>
-                    <p>Contes et Raconte</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Festival Contes et Raconte - Association Étincelle</p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p>📞 07 89 33 40 63</p>
+            <p>✉️ asso-etincelle@orange.fr</p>
+          </div>
+          <div class="footer-section">
+            <h3>Lieu</h3>
+            <p>Salle Antoine Arieu</p>
+            <p>St Germain du Puch</p>
+          </div>
+          <div class="footer-section">
+            <h3>Festival 2025</h3>
+            <p>27, 28 & 29 Mars</p>
+            <p>Contes et Raconte</p>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Festival Contes et Raconte - Association Étincelle</p>
+        </div>
+      </div>
     </footer>
 
     <!--<script src="data/content.js"></script>-->
     <script src="js/benevoles.js"></script>
-</body>
+  </body>
 </html>

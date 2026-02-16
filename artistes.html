@@ -1,622 +1,701 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Découvrez les artistes du Festival Contes et Raconte 2026 : conteurs, illustrateurs et écrivains">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Découvrez les artistes du Festival Contes et Raconte 2026 : conteurs, illustrateurs et écrivains"
+    />
     <title>Les Artistes | Festival Contes et Raconte 2026</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/templates/menu.js"></script>
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-brand">
-                    <a href="index.html">
-                        <h1>Contes & Raconte</h1>
-                        <span class="edition">3ème édition - 2026</span>
-                    </a>
-                </div>
-                <button class="menu-toggle" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="programme.html">Programme</a></li>
-                    <li><a href="artistes.html" class="active">Les Artistes</a></li>
-                    <li><a href="infos-pratiques.html">Infos Pratiques</a></li>
-                    <li><a href="benevoles.html">Bénévoles</a></li>
-                    <li><a href="partenaires.html">Partenaires</a></li>
-                </ul>
-            </div>
-        </nav>
+      <menu-component></menu-component>
     </header>
 
     <!-- Hero Artistes -->
     <section class="hero-small">
-        <div class="container">
-            <h1>Les Artistes</h1>
-            <p class="hero-subtitle">Conteurs, illustrateurs et passeurs d'histoires</p>
-        </div>
+      <div class="container">
+        <h1>Les Artistes</h1>
+        <p class="hero-subtitle">
+          Conteurs, illustrateurs et passeurs d'histoires
+        </p>
+      </div>
     </section>
 
     <!-- Introduction -->
     <section class="artistes-intro">
-        <div class="container">
-            <div class="intro-content">
-                <p class="lead">
-                    Des conteurs d'ici et d'ailleurs nous font la joie de leur présence. 
-                    Du plus loin pour Gigi Bigot, Colette Migné, Pépito Matéo au plus près 
-                    avec Monia Lyorit, Marie Pustetto et Josiane Millot.
-                </p>
-                <p>
-                    L'art de raconter se mêle à la magie des rencontres et du partage. 
-                    Différentes formes de racontées seront mises à l'honneur : contes en cercle, 
-                    visites contées, spectacles, conférences, stages et ateliers.
-                </p>
-            </div>
+      <div class="container">
+        <div class="intro-content">
+          <p class="lead">
+            Des conteurs d'ici et d'ailleurs nous font la joie de leur présence.
+            Du plus loin pour Gigi Bigot, Colette Migné, Pépito Matéo au plus
+            près avec Monia Lyorit, Marie Pustetto et Josiane Millot.
+          </p>
+          <p>
+            L'art de raconter se mêle à la magie des rencontres et du partage.
+            Différentes formes de racontées seront mises à l'honneur : contes en
+            cercle, visites contées, spectacles, conférences, stages et
+            ateliers.
+          </p>
         </div>
+      </div>
     </section>
 
     <!-- Les Conteurs -->
     <section class="artistes-section">
-        <div class="container">
-            <h2 class="section-title">Les Conteurs</h2>
+      <div class="container">
+        <h2 class="section-title">Les Conteurs</h2>
 
-            <!-- Gigi Bigot -->
-            <div class="artist-card featured">
-                <div class="artist-image">
-                    <img src="images/gigi.jpg" alt="Gigi Bigot" >
-                    <div class="artist-badge">Invitée d'honneur</div>
-                    <div class="artist-quote artist-image-header">
-                        <h3>Gigi Bigot</h3>
-                        <p class="artist-tagline">"Sans les contes, la terre serait bien trop petite et le héros manquerait grandement d'envergure !"</p>
-                    </div>
-                </div>
-                <div class="artist-content">  
-                    <div class="artist-bio">
-                        <p>
-                            <strong>Gigi Bigot</strong> est une conteuse incontournable dont l'univers poétique 
-                            et symbolique touche le cœur de tous les publics. Membre actif du mouvement 
-                            ATD Quart Monde, elle explore avec finesse le pouvoir de la parole symbolique 
-                            et son rôle dans notre rapport au monde.
-                        </p>
-                        <p>
-                            Contant avec une gourmandise où pétillent émotion et malice, Gigi Bigot vous 
-                            emmène dans des histoires où le fantastique côtoie l'humanité la plus profonde. 
-                            Elle raconte pour que chacun puisse s'accrocher à son morceau de lune...
-                        </p>
-                        <p>
-                            Durant le festival, elle partagera sa réflexion sur l'art du conte lors d'une 
-                            conférence tourneboulée, puis nous offrira deux spectacles : 
-                            <em>"Nichoir à paroles"</em> et <em>"Les mots à la bouche"</em>.
-                        </p>
-                    </div>
-
-                    <div class="artist-spectacles">
-                        <h4>Ses spectacles au festival :</h4>
-                        <ul>
-                            <li>
-                                <strong>Conférence : "Le manger pour cœur"</strong>
-                                <span>Jeudi 2 avril à 18h30</span>
-                            </li>
-                            <li>
-                                <strong>"Nichoir à paroles"</strong>
-                                <span>Mercredi 1er avril à 16h</span>
-                            </li>
-                            <li>
-                                <strong>"Les mots à la bouche"</strong>
-                                <span>Jeudi 2 avril à 19h30</span>
-                            </li>
-                            <li>
-                                <strong>Contes au hasard</strong>
-                                <span>Vendredi 3 avril à 20h30 (avec C. Migné et P. Matéo)</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="artist-book">
-                        <p><strong>📚 Son livre :</strong> <em>Marchande d'étoiles, le rêve d'une conteuse d'aujourd'hui</em></p>
-                        <p class="book-note">Coédition La Grande Oreille / Éditions Quart Monde</p>
-                    </div>
-
-                    <div class="artist-actions">
-                        <a href="programme.html#gigi-bigot" class="btn btn-primary">Voir son programme</a>
-                    </div>
-                </div>
+        <!-- Gigi Bigot -->
+        <div class="artist-card featured">
+          <div class="artist-image">
+            <img src="images/gigi.jpg" alt="Gigi Bigot" />
+            <div class="artist-badge">Invitée d'honneur</div>
+            <div class="artist-quote artist-image-header">
+              <h3>Gigi Bigot</h3>
+              <p class="artist-tagline">
+                "Sans les contes, la terre serait bien trop petite et le héros
+                manquerait grandement d'envergure !"
+              </p>
+            </div>
+          </div>
+          <div class="artist-content">
+            <div class="artist-bio">
+              <p>
+                <strong>Gigi Bigot</strong> est une conteuse incontournable dont
+                l'univers poétique et symbolique touche le cœur de tous les
+                publics. Membre actif du mouvement ATD Quart Monde, elle explore
+                avec finesse le pouvoir de la parole symbolique et son rôle dans
+                notre rapport au monde.
+              </p>
+              <p>
+                Contant avec une gourmandise où pétillent émotion et malice,
+                Gigi Bigot vous emmène dans des histoires où le fantastique
+                côtoie l'humanité la plus profonde. Elle raconte pour que chacun
+                puisse s'accrocher à son morceau de lune...
+              </p>
+              <p>
+                Durant le festival, elle partagera sa réflexion sur l'art du
+                conte lors d'une conférence tourneboulée, puis nous offrira deux
+                spectacles :
+                <em>"Nichoir à paroles"</em> et <em>"Les mots à la bouche"</em>.
+              </p>
             </div>
 
-            <!-- Colette Migné -->
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img src="images/colette_migne.jpg" alt="Colette Migné"><!--loading="lazy"-->
-                    <div class="artist-quote artist-image-header">
-                        <h3>Colette Migné</h3>
-                        <p class="artist-tagline">"Ça trempoline de l'intérieur, colorise le verbe, gromelotte le corps et destoupe les oreilles !"</p>
-                    </div>
-                </div>
-                <div class="artist-content">
-                    <div class="artist-bio">
-                        <p>
-                            <strong>Clown à plein temps depuis 1991</strong>, Colette Migné a cheminé nez rouge 
-                            au vent, de créations solo en lâchés de clown urbain. Sa rencontre avec le conte 
-                            s'est faite naturellement, fusionnant sa fantaisie clownesque avec la magie des histoires.
-                        </p>
-                        <p>
-                            Avec elle, impossible de raconter droit ! Son verbe coloré, son corps qui danse 
-                            et ses oreilles grandes ouvertes transforment chaque histoire en une aventure 
-                            jubilatoire. Ses contes sont <strong>chaleureusement conseillés par les ORL 
-                            en cas de déprime auditive</strong>.
-                        </p>
-                        <p>
-                            Elle propose au festival une <strong>petite salade composée de ses histoires 
-                            préférées</strong>, qui varie selon l'humeur de la dame !
-                        </p>
-                    </div>
-
-                    <div class="artist-spectacles">
-                        <h4>Ses spectacles au festival :</h4>
-                        <ul>
-                            <li>
-                                <strong>Apéro Contes</strong>
-                                <span>Samedi 4 avril à 12h</span>
-                            </li>
-                            <li>
-                                <strong>Contes pour rire</strong>
-                                <span>Samedi 4 avril à 16h</span>
-                            </li>
-                            <li>
-                                <strong>Contes au hasard</strong>
-                                <span>Vendredi 3 avril à 20h30 (avec G. Bigot et P. Matéo)</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="artist-actions">
-                        <a href="programme.html#colette-migne" class="btn btn-primary">Voir son programme</a>
-                    </div>
-                </div>
+            <div class="artist-spectacles">
+              <h4>Ses spectacles au festival :</h4>
+              <ul>
+                <li>
+                  <strong>Conférence : "Le manger pour cœur"</strong>
+                  <span>Jeudi 2 avril à 18h30</span>
+                </li>
+                <li>
+                  <strong>"Nichoir à paroles"</strong>
+                  <span>Mercredi 1er avril à 16h</span>
+                </li>
+                <li>
+                  <strong>"Les mots à la bouche"</strong>
+                  <span>Jeudi 2 avril à 19h30</span>
+                </li>
+                <li>
+                  <strong>Contes au hasard</strong>
+                  <span
+                    >Vendredi 3 avril à 20h30 (avec C. Migné et P. Matéo)</span
+                  >
+                </li>
+              </ul>
             </div>
 
-            <!-- Pépito Matéo -->
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img src="images/pepito2.jpg" alt="Pépito Matéo">
-                    <div class="artist-quote artist-image-header">
-                        <h3>Pépito Matéo</h3>
-                        <p class="artist-tagline">"Le facétieux conteur repeint le monde de sa douce folie langagière"</p>
-                    </div>
-                </div>
-                <div class="artist-content">
-                    <div class="artist-bio">
-                        <p>
-                            <strong>Pépito Matéo</strong> est un virtuose du langage, un jongleur de mots 
-                            qui transforme les malentendus en poésie. Son univers unique explore avec 
-                            humour et sensibilité les ambiguïtés du français, les cultures et leurs à priori.
-                        </p>
-                        <p>
-                            Dans <strong>"La leçon de français"</strong>, cette pseudo-conférence en forme 
-                            de leçon de choses devient un témoignage sensible sur l'humanité et ses différences. 
-                            D'une piste de ski à un lieu de rétention administrative, le conteur nous promène 
-                            dans un monde repeint de sa singulière poésie.
-                        </p>
-                        <p>
-                            Prétexte à toutes les excentricités, cette traque du français n'a de cesse 
-                            de nous émerveiller par sa douce folie langagière.
-                        </p>
-                    </div>
-
-                    <div class="artist-spectacles">
-                        <h4>Son spectacle au festival :</h4>
-                        <ul>
-                            <li>
-                                <strong>"La leçon de français"</strong>
-                                <span>Samedi 4 avril à 20h30</span>
-                                <span class="age-badge">Adultes et ados (15+)</span>
-                            </li>
-                            <li>
-                                <strong>Contes au hasard</strong>
-                                <span>Vendredi 3 avril à 20h30 (avec G. Bigot et C. Migné)</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="artist-actions">
-                        <a href="programme.html#pepito-mateo" class="btn btn-primary">Voir son programme</a>
-                    </div>
-                </div>
+            <div class="artist-book">
+              <p>
+                <strong>📚 Son livre :</strong>
+                <em
+                  >Marchande d'étoiles, le rêve d'une conteuse d'aujourd'hui</em
+                >
+              </p>
+              <p class="book-note">
+                Coédition La Grande Oreille / Éditions Quart Monde
+              </p>
             </div>
 
-            <!-- Monia Lyorit -->
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img src="images/mona_lyorit.jpeg" alt="Monia Lyorit">
-                    <div class="artist-quote artist-image-header">
-                        <h3>Monia Lyorit</h3>
-                        <p class="artist-tagline">Contes du matin pour les tout-petits</p>
-                    </div>
-                </div>
-                <div class="artist-content">
-                    <div class="artist-bio">
-                        <p>
-                            <strong>Monia Lyorit</strong> enchante les plus jeunes avec sa valise noire 
-                            magique qui se transforme tour à tour en plateau de scène, support de croquis 
-                            et boîte à bidules merveilleux.
-                        </p>
-                        <p>
-                            En chansons, jeux de doigts, dessins et pliages, elle raconte les aventures 
-                            de <strong>Petit Pouce</strong>, ce personnage bien connu des tout-petits. 
-                            Proche du public, installée tout près des enfants, elle les emmène en route 
-                            pour la forêt, sur l'océan ou derrière la colline...
-                        </p>
-                        <p>
-                            Son spectacle <em>"La journée de petit pouce"</em> suit ce héros miniature 
-                            qui a du mal à se lever, mais qui finira par vivre mille aventures !
-                        </p>
-                    </div>
-
-                    <div class="artist-spectacles">
-                        <h4>Son spectacle au festival :</h4>
-                        <ul>
-                            <li>
-                                <strong>"La journée de petit pouce"</strong>
-                                <span>Samedi 4 avril à 10h30</span>
-                                <span class="age-badge">2-5 ans</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="artist-actions">
-                        <a href="programme.html#monia-lyorit" class="btn btn-primary">Voir son programme</a>
-                    </div>
-                </div>
+            <div class="artist-actions">
+              <a href="programme.html#gigi-bigot" class="btn btn-primary"
+                >Voir son programme</a
+              >
             </div>
-
-            <!-- Marie Pustetto -->
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img src="images/marie_pustetto.jpg" alt="Marie Pustetto">
-                    <div class="artist-quote artist-image-header">
-                        <h3>Marie Pustetto</h3>
-                        <p class="artist-tagline">Contes en cercle et visites contées</p>
-                    </div>
-                </div>
-                <div class="artist-content">
-                    <div class="artist-bio">
-                        <p>
-                            <strong>Marie Pustetto</strong> anime avec passion les <strong>Contes en cercle</strong>, 
-                            un dispositif inspiré des cercles conteurs initiés par Suzy Platiel. Ici, pas 
-                            besoin de prouesse spectaculaire, simplement la joie du partage !
-                        </p>
-                        <p>
-                            Des petits contes, des facéties, des sagesses, des chansons, des devinettes... 
-                            Le plaisir de l'oralité et de la spontanéité. Chacun est bienvenu avec ses 
-                            histoires issues de la littérature orale, des histoires sans auteur, qui ont 
-                            traversé les océans ou juste la forêt d'à côté.
-                        </p>
-                        <p>
-                            Marie propose également une <strong>visite contée</strong> autour des œuvres 
-                            de Béatrice Elso, créant des ponts poétiques entre images et paroles.
-                        </p>
-                    </div>
-
-                    <div class="artist-spectacles">
-                        <h4>Ses interventions au festival :</h4>
-                        <ul>
-                            <li>
-                                <strong>Contes en cercle</strong>
-                                <span>Mercredi 1er avril à 18h</span>
-                                <span class="badge-free">Entrée libre</span>
-                            </li>
-                            <li>
-                                <strong>Visite contée de l'exposition</strong>
-                                <span>Vendredi 3 avril à 18h30 (avec Béatrice Elso)</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="artist-note">
-                        <p>
-                            💡 Marie anime tout au long de l'année un cercle conteur mensuel pour adultes, 
-                            où les participants partagent des histoires et construisent un répertoire commun 
-                            en toute liberté et singularité.
-                        </p>
-                    </div>
-
-                    <div class="artist-actions">
-                        <a href="programme.html#marie-pustetto" class="btn btn-primary">Voir son programme</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Josiane Millot -->
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img src="images/josiane-millot.jpg" alt="Josiane Millot">
-                    <div class="artist-quote artist-image-header">
-                        <h3>Josiane Millot</h3>
-                        <p class="artist-tagline">Conteuse locale passionnée</p>
-                    </div>
-                </div>
-                <div class="artist-content">   
-                    <div class="artist-bio">
-                        <p>
-                            <strong>Josiane Millot</strong> fait partie des conteuses locales qui enrichissent 
-                            le patrimoine oral de notre territoire. Elle participe activement à la vie du 
-                            festival et aux actions de médiation tout au long de l'année.
-                        </p>
-                        <p>
-                            Membre du cercle conteur animé par Marie Pustetto, Josiane contribue à faire 
-                            vivre l'oralité et le partage d'histoires dans notre région.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Béatrice Elso -->
-            <div class="artist-card">
-                <div class="artist-image">
-                    <img src="images/beatrice-elso.jpg" alt="Béatrice Elso">
-                    <div class="artist-badge exhibition-badge">Exposition</div>
-                    <div class="artist-quote artist-image-header">
-                        <h3>Béatrice Elso</h3>
-                        <p class="artist-role">Illustratrice</p>
-                        <p class="artist-tagline">"Dessiner c'est comme respirer… c'est vital. Une grande inspiration pour 
-                            puiser mes émotions."</p>
-                    </div>
-                </div>
-                <div class="artist-content">
-                    <div class="artist-bio">
-                        <p>
-                            Les dessins, montages et collages de <strong>Béatrice Elso</strong> sont 
-                            foisonnants de personnages et d'histoires. Comme des rêves de papier, ses 
-                            œuvres invitent à la rêverie et à l'imaginaire.
-                        </p>
-                        <p>
-                            Elle laisse la liberté au spectateur de recréer sa propre histoire à partir 
-                            de ses personnages livrés à un monde à la fois féroce et tendre, dessinés 
-                            pêle-mêle à l'encre noire.
-                        </p>
-                    </div>
-
-                    <div class="exhibition-info">
-                        <h4>Exposition "Il était une fois"</h4>
-                        <p><strong>📅 Du 1er au 4 avril 2026</strong></p>
-                        <p>📍 Salle Antoine Arieu</p>
-                        <p>🕐 Ouverte avant et après chaque spectacle</p>
-                        <p class="badge-free">Entrée libre</p>
-                        
-                        <div class="exhibition-special">
-                            <h5>✨ Visite contée avec Marie Pustetto</h5>
-                            <p>Vendredi 3 avril à 18h30</p>
-                            <p>Tarif : Adultes 6€ | Enfants (6+) 4€</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
+
+        <!-- Colette Migné -->
+        <div class="artist-card">
+          <div class="artist-image">
+            <img
+              src="images/colette_migne.jpg"
+              alt="Colette Migné"
+            /><!--loading="lazy"-->
+            <div class="artist-quote artist-image-header">
+              <h3>Colette Migné</h3>
+              <p class="artist-tagline">
+                "Ça trempoline de l'intérieur, colorise le verbe, gromelotte le
+                corps et destoupe les oreilles !"
+              </p>
+            </div>
+          </div>
+          <div class="artist-content">
+            <div class="artist-bio">
+              <p>
+                <strong>Clown à plein temps depuis 1991</strong>, Colette Migné
+                a cheminé nez rouge au vent, de créations solo en lâchés de
+                clown urbain. Sa rencontre avec le conte s'est faite
+                naturellement, fusionnant sa fantaisie clownesque avec la magie
+                des histoires.
+              </p>
+              <p>
+                Avec elle, impossible de raconter droit ! Son verbe coloré, son
+                corps qui danse et ses oreilles grandes ouvertes transforment
+                chaque histoire en une aventure jubilatoire. Ses contes sont
+                <strong
+                  >chaleureusement conseillés par les ORL en cas de déprime
+                  auditive</strong
+                >.
+              </p>
+              <p>
+                Elle propose au festival une
+                <strong
+                  >petite salade composée de ses histoires préférées</strong
+                >, qui varie selon l'humeur de la dame !
+              </p>
+            </div>
+
+            <div class="artist-spectacles">
+              <h4>Ses spectacles au festival :</h4>
+              <ul>
+                <li>
+                  <strong>Apéro Contes</strong>
+                  <span>Samedi 4 avril à 12h</span>
+                </li>
+                <li>
+                  <strong>Contes pour rire</strong>
+                  <span>Samedi 4 avril à 16h</span>
+                </li>
+                <li>
+                  <strong>Contes au hasard</strong>
+                  <span
+                    >Vendredi 3 avril à 20h30 (avec G. Bigot et P. Matéo)</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="artist-actions">
+              <a href="programme.html#colette-migne" class="btn btn-primary"
+                >Voir son programme</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Pépito Matéo -->
+        <div class="artist-card">
+          <div class="artist-image">
+            <img src="images/pepito2.jpg" alt="Pépito Matéo" />
+            <div class="artist-quote artist-image-header">
+              <h3>Pépito Matéo</h3>
+              <p class="artist-tagline">
+                "Le facétieux conteur repeint le monde de sa douce folie
+                langagière"
+              </p>
+            </div>
+          </div>
+          <div class="artist-content">
+            <div class="artist-bio">
+              <p>
+                <strong>Pépito Matéo</strong> est un virtuose du langage, un
+                jongleur de mots qui transforme les malentendus en poésie. Son
+                univers unique explore avec humour et sensibilité les ambiguïtés
+                du français, les cultures et leurs à priori.
+              </p>
+              <p>
+                Dans <strong>"La leçon de français"</strong>, cette
+                pseudo-conférence en forme de leçon de choses devient un
+                témoignage sensible sur l'humanité et ses différences. D'une
+                piste de ski à un lieu de rétention administrative, le conteur
+                nous promène dans un monde repeint de sa singulière poésie.
+              </p>
+              <p>
+                Prétexte à toutes les excentricités, cette traque du français
+                n'a de cesse de nous émerveiller par sa douce folie langagière.
+              </p>
+            </div>
+
+            <div class="artist-spectacles">
+              <h4>Son spectacle au festival :</h4>
+              <ul>
+                <li>
+                  <strong>"La leçon de français"</strong>
+                  <span>Samedi 4 avril à 20h30</span>
+                  <span class="age-badge">Adultes et ados (15+)</span>
+                </li>
+                <li>
+                  <strong>Contes au hasard</strong>
+                  <span
+                    >Vendredi 3 avril à 20h30 (avec G. Bigot et C. Migné)</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="artist-actions">
+              <a href="programme.html#pepito-mateo" class="btn btn-primary"
+                >Voir son programme</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Monia Lyorit -->
+        <div class="artist-card">
+          <div class="artist-image">
+            <img src="images/mona_lyorit.jpeg" alt="Monia Lyorit" />
+            <div class="artist-quote artist-image-header">
+              <h3>Monia Lyorit</h3>
+              <p class="artist-tagline">Contes du matin pour les tout-petits</p>
+            </div>
+          </div>
+          <div class="artist-content">
+            <div class="artist-bio">
+              <p>
+                <strong>Monia Lyorit</strong> enchante les plus jeunes avec sa
+                valise noire magique qui se transforme tour à tour en plateau de
+                scène, support de croquis et boîte à bidules merveilleux.
+              </p>
+              <p>
+                En chansons, jeux de doigts, dessins et pliages, elle raconte
+                les aventures de <strong>Petit Pouce</strong>, ce personnage
+                bien connu des tout-petits. Proche du public, installée tout
+                près des enfants, elle les emmène en route pour la forêt, sur
+                l'océan ou derrière la colline...
+              </p>
+              <p>
+                Son spectacle <em>"La journée de petit pouce"</em> suit ce héros
+                miniature qui a du mal à se lever, mais qui finira par vivre
+                mille aventures !
+              </p>
+            </div>
+
+            <div class="artist-spectacles">
+              <h4>Son spectacle au festival :</h4>
+              <ul>
+                <li>
+                  <strong>"La journée de petit pouce"</strong>
+                  <span>Samedi 4 avril à 10h30</span>
+                  <span class="age-badge">2-5 ans</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="artist-actions">
+              <a href="programme.html#monia-lyorit" class="btn btn-primary"
+                >Voir son programme</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Marie Pustetto -->
+        <div class="artist-card">
+          <div class="artist-image">
+            <img src="images/marie_pustetto.jpg" alt="Marie Pustetto" />
+            <div class="artist-quote artist-image-header">
+              <h3>Marie Pustetto</h3>
+              <p class="artist-tagline">Contes en cercle et visites contées</p>
+            </div>
+          </div>
+          <div class="artist-content">
+            <div class="artist-bio">
+              <p>
+                <strong>Marie Pustetto</strong> anime avec passion les
+                <strong>Contes en cercle</strong>, un dispositif inspiré des
+                cercles conteurs initiés par Suzy Platiel. Ici, pas besoin de
+                prouesse spectaculaire, simplement la joie du partage !
+              </p>
+              <p>
+                Des petits contes, des facéties, des sagesses, des chansons, des
+                devinettes... Le plaisir de l'oralité et de la spontanéité.
+                Chacun est bienvenu avec ses histoires issues de la littérature
+                orale, des histoires sans auteur, qui ont traversé les océans ou
+                juste la forêt d'à côté.
+              </p>
+              <p>
+                Marie propose également une
+                <strong>visite contée</strong> autour des œuvres de Béatrice
+                Elso, créant des ponts poétiques entre images et paroles.
+              </p>
+            </div>
+
+            <div class="artist-spectacles">
+              <h4>Ses interventions au festival :</h4>
+              <ul>
+                <li>
+                  <strong>Contes en cercle</strong>
+                  <span>Mercredi 1er avril à 18h</span>
+                  <span class="badge-free">Entrée libre</span>
+                </li>
+                <li>
+                  <strong>Visite contée de l'exposition</strong>
+                  <span>Vendredi 3 avril à 18h30 (avec Béatrice Elso)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="artist-note">
+              <p>
+                💡 Marie anime tout au long de l'année un cercle conteur mensuel
+                pour adultes, où les participants partagent des histoires et
+                construisent un répertoire commun en toute liberté et
+                singularité.
+              </p>
+            </div>
+
+            <div class="artist-actions">
+              <a href="programme.html#marie-pustetto" class="btn btn-primary"
+                >Voir son programme</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Josiane Millot -->
+        <div class="artist-card">
+          <div class="artist-image">
+            <img src="images/josiane-millot.jpg" alt="Josiane Millot" />
+            <div class="artist-quote artist-image-header">
+              <h3>Josiane Millot</h3>
+              <p class="artist-tagline">Conteuse locale passionnée</p>
+            </div>
+          </div>
+          <div class="artist-content">
+            <div class="artist-bio">
+              <p>
+                <strong>Josiane Millot</strong> fait partie des conteuses
+                locales qui enrichissent le patrimoine oral de notre territoire.
+                Elle participe activement à la vie du festival et aux actions de
+                médiation tout au long de l'année.
+              </p>
+              <p>
+                Membre du cercle conteur animé par Marie Pustetto, Josiane
+                contribue à faire vivre l'oralité et le partage d'histoires dans
+                notre région.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Béatrice Elso -->
+        <div class="artist-card">
+          <div class="artist-image">
+            <img src="images/beatrice-elso.jpg" alt="Béatrice Elso" />
+            <div class="artist-badge exhibition-badge">Exposition</div>
+            <div class="artist-quote artist-image-header">
+              <h3>Béatrice Elso</h3>
+              <p class="artist-role">Illustratrice</p>
+              <p class="artist-tagline">
+                "Dessiner c'est comme respirer… c'est vital. Une grande
+                inspiration pour puiser mes émotions."
+              </p>
+            </div>
+          </div>
+          <div class="artist-content">
+            <div class="artist-bio">
+              <p>
+                Les dessins, montages et collages de
+                <strong>Béatrice Elso</strong> sont foisonnants de personnages
+                et d'histoires. Comme des rêves de papier, ses œuvres invitent à
+                la rêverie et à l'imaginaire.
+              </p>
+              <p>
+                Elle laisse la liberté au spectateur de recréer sa propre
+                histoire à partir de ses personnages livrés à un monde à la fois
+                féroce et tendre, dessinés pêle-mêle à l'encre noire.
+              </p>
+            </div>
+
+            <div class="exhibition-info">
+              <h4>Exposition "Il était une fois"</h4>
+              <p><strong>📅 Du 1er au 4 avril 2026</strong></p>
+              <p>📍 Salle Antoine Arieu</p>
+              <p>🕐 Ouverte avant et après chaque spectacle</p>
+              <p class="badge-free">Entrée libre</p>
+
+              <div class="exhibition-special">
+                <h5>✨ Visite contée avec Marie Pustetto</h5>
+                <p>Vendredi 3 avril à 18h30</p>
+                <p>Tarif : Adultes 6€ | Enfants (6+) 4€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Ateliers et Expositions -->
     <section class="other-artists-section">
-        <div class="container">
-            <h2 class="section-title">Ateliers & Expositions</h2>
+      <div class="container">
+        <h2 class="section-title">Ateliers & Expositions</h2>
 
-            <!-- Brigitte Salmon -->
-            <div class="artist-card workshop">
-                <div class="artist-image">
-                    <img src="images/brigitte.jpg" alt="Brigitte Salmon">
-                    <div class="artist-badge workshop-badge">Ateliers d'écriture</div>
-                    <div class="artist-quote artist-image-header">
-                        <h3>Brigitte Salmon</h3>
-                        <p class="artist-role">Animatrice d'ateliers d'écriture</p>
-                    </div>
-                </div>
-                <div class="artist-content">
-                    <div class="artist-bio">
-                        <p>
-                            <strong>Brigitte Salmon</strong> anime des ateliers d'écriture créative autour 
-                            de l'univers des contes. Pour ceux qui n'ont jamais écrit, pour ceux qui ont 
-                            envie de jouer avec les mots, pour ceux qui écrivent déjà...
-                        </p>
-                        <p>
-                            <strong>"Il était une fois..."</strong> Ces quelques mots augurent une suite 
-                            fantastique où la rêverie côtoie la peur pour toujours finir bien. Brigitte 
-                            propose une immersion dans l'œuvre de Béatrice Elso dont l'univers onirique 
-                            et poétique se prête à l'imaginaire.
-                        </p>
-                        <p>
-                            Elle présente également avec Bettina Braley l'exposition <strong>"Des Mots Brodés"</strong>, 
-                            des tableaux brodés d'haïkus et phrases poétiques.
-                        </p>
-                    </div>
-
-                    <div class="artist-spectacles">
-                        <h4>Ses ateliers :</h4>
-                        <ul>
-                            <li>
-                                <strong>Atelier à la Bibliothèque</strong>
-                                <span>Mardi 31 mars de 15h à 16h30</span>
-                                <span class="badge-free">Gratuit sur inscription</span>
-                            </li>
-                            <li>
-                                <strong>Atelier Salle Antoine Arieu</strong>
-                                <span>Mercredi 1er avril de 14h à 15h30</span>
-                                <span class="badge-free">Gratuit sur inscription</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="artist-contact">
-                        <p><strong>Inscriptions :</strong></p>
-                        <p>📞 Bibliothèque : 05 57 24 51 19 ou 06 74 29 36 34</p>
-                        <p>📧 bibliotheque@mairie-stgermaindupuch.fr</p>
-                    </div>
-                </div>
+        <!-- Brigitte Salmon -->
+        <div class="artist-card workshop">
+          <div class="artist-image">
+            <img src="images/brigitte.jpg" alt="Brigitte Salmon" />
+            <div class="artist-badge workshop-badge">Ateliers d'écriture</div>
+            <div class="artist-quote artist-image-header">
+              <h3>Brigitte Salmon</h3>
+              <p class="artist-role">Animatrice d'ateliers d'écriture</p>
+            </div>
+          </div>
+          <div class="artist-content">
+            <div class="artist-bio">
+              <p>
+                <strong>Brigitte Salmon</strong> anime des ateliers d'écriture
+                créative autour de l'univers des contes. Pour ceux qui n'ont
+                jamais écrit, pour ceux qui ont envie de jouer avec les mots,
+                pour ceux qui écrivent déjà...
+              </p>
+              <p>
+                <strong>"Il était une fois..."</strong> Ces quelques mots
+                augurent une suite fantastique où la rêverie côtoie la peur pour
+                toujours finir bien. Brigitte propose une immersion dans l'œuvre
+                de Béatrice Elso dont l'univers onirique et poétique se prête à
+                l'imaginaire.
+              </p>
+              <p>
+                Elle présente également avec Bettina Braley l'exposition
+                <strong>"Des Mots Brodés"</strong>, des tableaux brodés d'haïkus
+                et phrases poétiques.
+              </p>
             </div>
 
-            <!-- Bettina Braley -->
-            <div class="artist-card exhibition">
-                <div class="artist-image">
-                    <img src="images/bettina-braley.jpg" alt="Bettina Braley">
-                    <div class="artist-badge exhibition-badge">Exposition</div>
-                    <div class="artist-quote artist-image-header">
-                        <h3>Bettina Braley</h3>
-                        <p class="artist-role">Artiste textile & Brigitte Salmon</p>
-                    </div>
-                </div>
-                <div class="artist-content">
-                    <div class="artist-bio">
-                        <p>
-                            <strong>Bettina Braley</strong> et <strong>Brigitte Salmon</strong> présentent 
-                            <strong>"Des Mots Brodés"</strong>, une exposition poétique où les mots 
-                            prennent forme sur le tissu.
-                        </p>
-                        <p>
-                            Des tableaux brodés d'haïkus et phrases poétiques qui tissent des liens 
-                            entre l'écriture et l'art textile, entre la parole et le fil.
-                        </p>
-                    </div>
-
-                    <div class="exhibition-info">
-                        <h4>Exposition "Des Mots Brodés"</h4>
-                        <p><strong>📅 Du 2 au 4 avril 2026</strong></p>
-                        <p>📍 Salle Antoine Arieu</p>
-                        <p>🕐 Ouverte avant et après chaque spectacle</p>
-                        <p class="badge-free">Entrée libre</p>
-                    </div>
-                </div>
+            <div class="artist-spectacles">
+              <h4>Ses ateliers :</h4>
+              <ul>
+                <li>
+                  <strong>Atelier à la Bibliothèque</strong>
+                  <span>Mardi 31 mars de 15h à 16h30</span>
+                  <span class="badge-free">Gratuit sur inscription</span>
+                </li>
+                <li>
+                  <strong>Atelier Salle Antoine Arieu</strong>
+                  <span>Mercredi 1er avril de 14h à 15h30</span>
+                  <span class="badge-free">Gratuit sur inscription</span>
+                </li>
+              </ul>
             </div>
 
-            <!-- Sophie Metsemakers -->
-            <div class="artist-card installation">
-                <div class="artist-image">
-                    <img src="images/artistes/sophie-metsemakers.jpg" alt="Sophie Metsemakers">
-                    <div class="artist-badge installation-badge">Installation</div>
-                    <div class="artist-quote artist-image-header">
-                        <h3>Sophie Metsemakers</h3>
-                        <p class="artist-role">Installation "La maison des bois"</p>
-                    </div>
-                </div>
-                <div class="artist-content">   
-                    <div class="artist-bio">
-                        <p>
-                            <strong>Sophie Metsemakers</strong> vous fait visiter <strong>"La maison des bois"</strong>, 
-                            une installation sensorielle immersive qui invite à l'exploration.
-                        </p>
-                        <p>
-                            On y entre avec lampe torche ou frontale et on l'explore librement. 
-                            Sensations olfactives, tactiles, sonores... Chaque objet vient participer 
-                            à la narration que le visiteur construit, aux récits et autres contes 
-                            déjà entendus.
-                        </p>
-                        <p>
-                            Une expérience unique qui sollicite tous les sens et fait appel à 
-                            l'imaginaire de chacun.
-                        </p>
-                    </div>
-
-                    <div class="exhibition-info">
-                        <h4>"La maison des bois"</h4>
-                        <p><strong>📅 Samedi 4 avril 2026</strong></p>
-                        <p>📍 Salle annexe Antoine Arieu</p>
-                        <p><strong>🕐 Visites guidées :</strong></p>
-                        <ul class="visit-times">
-                            <li>10h - 10h30</li>
-                            <li>11h30 - 12h</li>
-                            <li>15h30 - 16h</li>
-                            <li>17h - 17h30</li>
-                        </ul>
-                        <p><strong>Tarif :</strong> 3€/enfant (3-8 ans)</p>
-                        <p class="info-note">1 accompagnant adulte gratuit par famille</p>
-                        <p><strong>📞 Réservation obligatoire :</strong> 07 89 33 40 63</p>
-                    </div>
-                </div>
+            <div class="artist-contact">
+              <p><strong>Inscriptions :</strong></p>
+              <p>📞 Bibliothèque : 05 57 24 51 19 ou 06 74 29 36 34</p>
+              <p>📧 bibliotheque@mairie-stgermaindupuch.fr</p>
             </div>
-
+          </div>
         </div>
+
+        <!-- Bettina Braley -->
+        <div class="artist-card exhibition">
+          <div class="artist-image">
+            <img src="images/bettina-braley.jpg" alt="Bettina Braley" />
+            <div class="artist-badge exhibition-badge">Exposition</div>
+            <div class="artist-quote artist-image-header">
+              <h3>Bettina Braley</h3>
+              <p class="artist-role">Artiste textile & Brigitte Salmon</p>
+            </div>
+          </div>
+          <div class="artist-content">
+            <div class="artist-bio">
+              <p>
+                <strong>Bettina Braley</strong> et
+                <strong>Brigitte Salmon</strong> présentent
+                <strong>"Des Mots Brodés"</strong>, une exposition poétique où
+                les mots prennent forme sur le tissu.
+              </p>
+              <p>
+                Des tableaux brodés d'haïkus et phrases poétiques qui tissent
+                des liens entre l'écriture et l'art textile, entre la parole et
+                le fil.
+              </p>
+            </div>
+
+            <div class="exhibition-info">
+              <h4>Exposition "Des Mots Brodés"</h4>
+              <p><strong>📅 Du 2 au 4 avril 2026</strong></p>
+              <p>📍 Salle Antoine Arieu</p>
+              <p>🕐 Ouverte avant et après chaque spectacle</p>
+              <p class="badge-free">Entrée libre</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sophie Metsemakers -->
+        <div class="artist-card installation">
+          <div class="artist-image">
+            <img
+              src="images/artistes/sophie-metsemakers.jpg"
+              alt="Sophie Metsemakers"
+            />
+            <div class="artist-badge installation-badge">Installation</div>
+            <div class="artist-quote artist-image-header">
+              <h3>Sophie Metsemakers</h3>
+              <p class="artist-role">Installation "La maison des bois"</p>
+            </div>
+          </div>
+          <div class="artist-content">
+            <div class="artist-bio">
+              <p>
+                <strong>Sophie Metsemakers</strong> vous fait visiter
+                <strong>"La maison des bois"</strong>, une installation
+                sensorielle immersive qui invite à l'exploration.
+              </p>
+              <p>
+                On y entre avec lampe torche ou frontale et on l'explore
+                librement. Sensations olfactives, tactiles, sonores... Chaque
+                objet vient participer à la narration que le visiteur construit,
+                aux récits et autres contes déjà entendus.
+              </p>
+              <p>
+                Une expérience unique qui sollicite tous les sens et fait appel
+                à l'imaginaire de chacun.
+              </p>
+            </div>
+
+            <div class="exhibition-info">
+              <h4>"La maison des bois"</h4>
+              <p><strong>📅 Samedi 4 avril 2026</strong></p>
+              <p>📍 Salle annexe Antoine Arieu</p>
+              <p><strong>🕐 Visites guidées :</strong></p>
+              <ul class="visit-times">
+                <li>10h - 10h30</li>
+                <li>11h30 - 12h</li>
+                <li>15h30 - 16h</li>
+                <li>17h - 17h30</li>
+              </ul>
+              <p><strong>Tarif :</strong> 3€/enfant (3-8 ans)</p>
+              <p class="info-note">1 accompagnant adulte gratuit par famille</p>
+              <p>
+                <strong>📞 Réservation obligatoire :</strong> 07 89 33 40 63
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- CTA Réservation -->
     <section class="cta-section">
-        <div class="container">
-            <h2>Envie de rencontrer nos artistes ?</h2>
-            <p>Réservez dès maintenant vos places pour leurs spectacles !</p>
-            <div class="cta-buttons">
-                <a href="https://www.helloasso.com/associations/etincelle33/evenements/festival-contes-et-raconte" 
-                   class="btn btn-light btn-large" target="_blank" rel="noopener">
-                    Réserver sur HelloAsso
-                </a>
-                <a href="tel:0789334063" class="btn btn-outline btn-large">
-                    📞 07 89 33 40 63
-                </a>
-            </div>
-            <p class="cta-note">
-                Réservation fortement conseillée • Jauges limitées
-            </p>
+      <div class="container">
+        <h2>Envie de rencontrer nos artistes ?</h2>
+        <p>Réservez dès maintenant vos places pour leurs spectacles !</p>
+        <div class="cta-buttons">
+          <a
+            href="https://www.helloasso.com/associations/etincelle33/evenements/festival-contes-et-raconte"
+            class="btn btn-light btn-large"
+            target="_blank"
+            rel="noopener"
+          >
+            Réserver sur HelloAsso
+          </a>
+          <a href="tel:0789334063" class="btn btn-outline btn-large">
+            📞 07 89 33 40 63
+          </a>
         </div>
+        <p class="cta-note">
+          Réservation fortement conseillée • Jauges limitées
+        </p>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h3>Festival Contes et Raconte</h3>
-                    <p>3ème édition - Janvier à Avril 2026</p>
-                    <p>St Germain du Puch (33750)</p>
-                    <p class="footer-org">Organisé par l'Association Etincelle</p>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Navigation</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="festival.html">Le Festival</a></li>
-                        <li><a href="programme.html">Programme</a></li>
-                        <li><a href="artistes.html">Les Artistes</a></li>
-                        <li><a href="infos-pratiques.html">Infos Pratiques</a></li>
-                        <li><a href="partenaires.html">Partenaires</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <ul class="footer-contact">
-                        <li>📞 Spectacles : 07 89 33 40 63</li>
-                        <li>📞 Restauration : 06 07 16 41 93</li>
-                        <li>📞 Bibliothèque : 05 57 24 51 19</li>
-                        <li>📧 asso-etincelle@orange.fr</li>
-                        <li>🌐 <a href="https://assoetincelle.jimdo.com" target="_blank">assoetincelle.jimdo.com</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h4>Suivez-nous</h4>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/festival_contes_et_raconte" target="_blank" rel="noopener" aria-label="Instagram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h3>Festival Contes et Raconte</h3>
+            <p>3ème édition - Janvier à Avril 2026</p>
+            <p>St Germain du Puch (33750)</p>
+            <p class="footer-org">Organisé par l'Association Etincelle</p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="festival.html">Le Festival</a></li>
+              <li><a href="programme.html">Programme</a></li>
+              <li><a href="artistes.html">Les Artistes</a></li>
+              <li><a href="infos-pratiques.html">Infos Pratiques</a></li>
+              <li><a href="partenaires.html">Partenaires</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul class="footer-contact">
+              <li>📞 Spectacles : 07 89 33 40 63</li>
+              <li>📞 Restauration : 06 07 16 41 93</li>
+              <li>📞 Bibliothèque : 05 57 24 51 19</li>
+              <li>📧 asso-etincelle@orange.fr</li>
+              <li>
+                🌐
+                <a href="https://assoetincelle.jimdo.com" target="_blank"
+                  >assoetincelle.jimdo.com</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Suivez-nous</h4>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/festival_contes_et_raconte"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2026 Association Etincelle - Tous droits réservés</p>
-                <p>Affiche : Maud Langlois | Site web : <a href="https://github.com" target="_blank">GitHub</a></p>
-            </div>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Association Etincelle - Tous droits réservés</p>
+          <p>
+            Affiche : Maud Langlois | Site web :
+            <a href="https://github.com" target="_blank">GitHub</a>
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
