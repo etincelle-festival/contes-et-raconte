@@ -1,4 +1,3 @@
-// menu.js
 class MenuComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -25,7 +24,7 @@ class MenuComponent extends HTMLElement {
       </nav>
     `;
 
-    // Now add event listeners AFTER the HTML is inserted
+    // add event listeners after the HTML is inserted
     this.initializeMenu();
   }
 
