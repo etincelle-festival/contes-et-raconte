@@ -209,6 +209,7 @@ strong {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: var(--transition);
+  border: 1px solid transparent;
 }
 
 .nav-menu a:hover,
@@ -403,25 +404,26 @@ strong {
 
 .btn-primary {
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-light);
   border-color: var(--color-primary);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-primary-dark);
-  border-color: var(--color-primary-dark);
+  background-color: var(--color-light);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(212, 118, 78, 0.4);
 }
 
 .btn-secondary {
   background-color: transparent;
-  color: var(--color-white);
-  border-color: var(--color-white);
+  color: var(--color-light);
+  border-color: var(--color-light);
 }
 
 .btn-secondary:hover {
-  background-color: var(--color-white);
+  background-color: var(--color-light);
   color: var(--color-primary);
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
@@ -436,7 +438,7 @@ strong {
 .btn-secondary-outlined:hover {
   background-color: var(--color-primary);
   border-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-light);
   transform: translateY(-2px);
   box-shadow: 0 5px 10px rgba(142, 142, 142, 0.3);
 }
@@ -1338,7 +1340,6 @@ strong {
 /* Introduction Artistes */
 .artistes-intro {
   padding: var(--spacing-lg) 0;
-  background: var(--color-bg);
 }
 
 .intro-content {
@@ -3557,6 +3558,10 @@ strong {
 }
 
 /* Utility classes */
+.bg-light {
+  background: var(--color-light);
+}
+
 .show-sm {
   display: none;
 }

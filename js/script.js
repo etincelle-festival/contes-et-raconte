@@ -73,16 +73,8 @@ if (filterButtons.length > 0) {
       eventItems.forEach((item) => {
         if (filter === 'all' || item.getAttribute('data-category') === filter) {
           item.style.display = 'block';
-          setTimeout(() => {
-            item.style.opacity = '1';
-            item.style.transform = 'scale(1)';
-          }, 10);
         } else {
-          item.style.opacity = '0';
-          item.style.transform = 'scale(0.9)';
-          setTimeout(() => {
-            item.style.display = 'none';
-          }, 300);
+          item.style.display = 'none';
         }
       });
     });
@@ -98,6 +90,7 @@ const searchInput = document.querySelector('.search-input');
 if (searchInput) {
   searchInput.addEventListener('input', (e) => {
     const searchTerm = e.target.value.toLowerCase();
+    console.log('searchTerm', searchTerm);
 
     eventItems.forEach((item) => {
       const title = item.querySelector('h3')?.textContent.toLowerCase() || '';
@@ -112,18 +105,15 @@ if (searchInput) {
         artist.includes(searchTerm) ||
         description.includes(searchTerm);
 
+      console.log('matches', matches);
+      if (searchTerm === 'bi') {
+        console.log('artist', artist);
+      }
+
       if (matches || searchTerm === '') {
         item.style.display = 'block';
-        setTimeout(() => {
-          item.style.opacity = '1';
-          item.style.transform = 'scale(1)';
-        }, 10);
       } else {
-        item.style.opacity = '0';
-        item.style.transform = 'scale(0.9)';
-        setTimeout(() => {
-          item.style.display = 'none';
-        }, 300);
+        item.style.display = 'none';
       }
     });
   });
@@ -842,8 +832,6 @@ document.addEventListener('DOMContentLoaded', () => {
 // ===================================
 // INITIALISATION
 // ===================================
-// TODO :delete logs
-console.log('🎭 Festival Contes et Raconte - Script chargé avec succès');
 
 // Gestion des bénévoles
 function loadBenevoles() {
