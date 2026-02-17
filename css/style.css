@@ -1368,7 +1368,8 @@ strong {
 /* Artist Card */
 .artist-card {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  /*grid-template-columns: 1fr 2fr;*/
+  grid-template-columns: 1fr;
   gap: var(--spacing-lg);
   margin-bottom: var(--spacing-xl);
   background: var(--color-light);
@@ -1409,9 +1410,14 @@ strong {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+.artist-image {
+  height: 300px;
+}
+
 .artist-image img {
-  /*width: 100%;*/
   height: 100%;
+  max-width: 40%;
+  min-width: 20%;
   object-fit: cover;
   display: block;
   transition: var(--transition);
@@ -1439,7 +1445,6 @@ strong {
 
 .artist-image-header {
   align-content: center !important;
-  /*padding: 30px;*/
   border: none !important;
   background: var(--color-light) !important;
 }
@@ -1707,13 +1712,14 @@ strong {
 
 /* Responsive */
 @media (max-width: 968px) {
+  /*	
   .artist-card {
     grid-template-columns: 1fr;
   }
 
   .artist-image {
     height: 300px;
-  }
+  }*/
 }
 
 @media (max-width: 768px) {
@@ -3547,5 +3553,24 @@ strong {
 
   .benevoles-grid {
     gap: 1.5rem;
+  }
+}
+
+/* Utility classes */
+.show-sm {
+  display: none;
+}
+
+.show-lg {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .show-sm {
+    display: block;
+  }
+
+  .show-lg {
+    display: none;
   }
 }
