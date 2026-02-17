@@ -451,7 +451,7 @@ strong {
 
 .btn-secondary.dark:hover {
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-light);
 }
 
 /* ===================================
@@ -491,28 +491,28 @@ strong {
    =================================== */
 
 .edito-section {
-  padding: var(--spacing-xl) 0;
+  padding-top: var(--spacing-xl);
   background-color: var(--color-light);
 }
 
 .bottom-shadow:after {
   content: '';
   display: block;
-  height: 8px;
+  height: 4px;
   background: transparent;
   background: -moz-linear-gradient(
     top,
-    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 0%,
     rgba(0, 0, 0, 0) 100%
   ); /* FF3.6-15 */
   background: -webkit-linear-gradient(
     top,
-    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 0%,
     rgba(0, 0, 0, 0) 100%
   ); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 0%,
     rgba(0, 0, 0, 0) 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(   startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
@@ -555,7 +555,7 @@ strong {
 }
 
 .event-card {
-  background-color: var(--color-white);
+  background-color: var(--color-light);
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
@@ -574,12 +574,8 @@ strong {
 }
 
 .event-date {
-  background: linear-gradient(
-    135deg,
-    var(--color-primary),
-    var(--color-secondary)
-  );
-  color: var(--color-white);
+  background-color: var(--color-primary);
+  color: var(--color-light);
   text-align: center;
   padding: var(--spacing-sm);
 }
@@ -657,12 +653,12 @@ strong {
     var(--color-secondary) 0%,
     var(--color-primary) 100%
   );
-  color: var(--color-white);
+  color: var(--color-light);
   text-align: center;
 }
 
 .cta-content h2 {
-  color: var(--color-white);
+  color: var(--color-light);
   margin-bottom: var(--spacing-sm);
 }
 
@@ -984,7 +980,6 @@ strong {
 
 .event-card.featured {
   border: 2px solid var(--color-primary);
-  background: linear-gradient(to bottom right, white, #fff8f3);
 }
 
 .event-time {
