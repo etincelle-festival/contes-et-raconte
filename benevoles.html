@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <script src="js/templates/menu.js"></script>
+    <script src="js/templates/footer.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -27,9 +28,11 @@
     <main class="main-content">
       <section class="benevoles-page">
         <div class="container">
-          <header class="page-header">
+          <div class="benevoles-header">
             <h1>Nos Bénévoles</h1>
             <p class="page-subtitle">Le cœur battant du festival</p>
+          </div>
+          <div class="page-header">
             <blockquote class="page-quote">
               "En amont du festival, ils ont œuvré auprès de différents publics
               pour faire connaître les conteurs invités, ils ont cousu, cloué,
@@ -42,7 +45,7 @@
                 ! 🙏</strong
               >
             </p>
-          </header>
+          </div>
 
           <!-- Grille des bénévoles -->
           <div class="benevoles-grid" id="benevolesGrid">
@@ -54,28 +57,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3>Contact</h3>
-            <p>📞 07 89 33 40 63</p>
-            <p>✉️ asso-etincelle@orange.fr</p>
-          </div>
-          <div class="footer-section">
-            <h3>Lieu</h3>
-            <p>Salle Antoine Arieu</p>
-            <p>St Germain du Puch</p>
-          </div>
-          <div class="footer-section">
-            <h3>Festival 2025</h3>
-            <p>27, 28 & 29 Mars</p>
-            <p>Contes et Raconte</p>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 Festival Contes et Raconte - Association Étincelle</p>
-        </div>
-      </div>
+      <footer-component></footer-component>
     </footer>
 
     <!--<script src="data/content.js"></script>-->

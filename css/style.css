@@ -281,8 +281,13 @@ strong {
   align-items: center;
   justify-content: center;
   text-align: center;
-  /*background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);*/
+  background: linear-gradient(
+    135deg,
+    var(--color-primary) 0%,
+    var(--color-secondary) 100%
+  );
   background: url(../images/affiche_2026.jpg) no-repeat center;
+  background-size: cover;
   overflow: hidden;
 }
 
@@ -293,6 +298,7 @@ strong {
   left: 0;
   right: 0;
   bottom: 0;
+  background-image: var(--color-bg);
   background-image:
     radial-gradient(
       circle at 20% 50%,
@@ -323,16 +329,19 @@ strong {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
   color: var(--color-bg);
-  padding: var(--spacing-lg) var(--spacing-md);
+  padding: 10px;
   max-width: 900px;
   margin: 0 auto;
+  border-radius: 2%;
+  background: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
 }
 
 .hero-title {
@@ -352,7 +361,6 @@ strong {
 
 .hero-dates {
   font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-  font-weight: 500;
   margin-bottom: var(--spacing-xs);
   animation: fadeInUp 1s ease-out 0.4s both;
 }
@@ -443,6 +451,20 @@ strong {
   box-shadow: 0 5px 10px rgba(142, 142, 142, 0.3);
 }
 
+.btn-secondary-inverted {
+  background-color: var(--color-light);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-secondary-inverted:hover {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border-color: var(--color-light);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
 /* Version pour fond clair */
 .btn-secondary.dark {
   color: var(--color-primary);
@@ -461,6 +483,7 @@ strong {
 .quote-section {
   padding: var(--spacing-lg) 0;
   background-color: var(--color-bg);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .main-quote {
@@ -493,29 +516,7 @@ strong {
 .edito-section {
   padding-top: var(--spacing-xl);
   background-color: var(--color-light);
-}
-
-.bottom-shadow:after {
-  content: '';
-  display: block;
-  height: 4px;
-  background: transparent;
-  background: -moz-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(0, 0, 0, 0) 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(0, 0, 0, 0) 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.2) 0%,
-    rgba(0, 0, 0, 0) 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(   startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 .edito-content {
@@ -836,7 +837,7 @@ strong {
 
 /* Filtres et recherche */
 .filters-section {
-  background: white;
+  background-color: var(--color-light);
   padding: var(--spacing-md) 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   position: sticky;
@@ -1832,7 +1833,7 @@ strong {
 
 .info-card.highlight {
   border: 2px solid var(--color-primary);
-  background: linear-gradient(to bottom right, white, #fff8f3);
+  background-color: var(--color-light);
 }
 
 .info-icon {
@@ -1909,11 +1910,13 @@ strong {
 .tarif-card:hover {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
   transform: translateY(-5px);
-}
-
-.tarif-card.featured {
   border: 3px solid var(--color-primary);
 }
+
+/*
+.tarif-card.featured {
+  border: 3px solid var(--color-primary);
+}*/
 
 .tarif-header {
   padding: 1.5rem;
@@ -1927,31 +1930,27 @@ strong {
 }
 
 .tarif-header.spectacle {
-  background: linear-gradient(
-    135deg,
-    var(--color-primary),
-    var(--color-primary-dark)
-  );
+  background-color: var(--color-primary);
 }
 
 .tarif-header.spectacle-small {
-  background: linear-gradient(135deg, var(--color-secondary), #cc6600);
+  background-color: var(--color-secondary);
 }
 
 .tarif-header.soiree {
-  background: linear-gradient(135deg, #9b4dca, #6b2a8e);
+  background-color: #6b2a8e;
 }
 
 .tarif-header.restauration {
-  background: linear-gradient(135deg, var(--color-accent), #e67e22);
+  background-color: var(--color-accent);
 }
 
 .tarif-header.installation {
-  background: linear-gradient(135deg, #2d8b2d, #1e6b1e);
+  background-color: #2d8b2d;
 }
 
 .tarif-header.gratuit {
-  background: linear-gradient(135deg, #27ae60, #229954);
+  background-color: #27ae60;
 }
 
 .tarif-badge {
@@ -2058,7 +2057,7 @@ strong {
 }
 
 .reservation-card {
-  background: white;
+  background-color: var(--color-light);
   padding: var(--spacing-lg);
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -2069,12 +2068,14 @@ strong {
 .reservation-card:hover {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
   transform: translateY(-5px);
+  border: 3px solid var(--color-primary);
 }
 
+/*
 .reservation-card.primary {
   border: 3px solid var(--color-primary);
-  background: linear-gradient(to bottom, white, #fff8f3);
-}
+  background-color: var(--color-light);
+}*/
 
 .reservation-icon {
   font-size: 3rem;
@@ -2284,7 +2285,7 @@ strong {
 }
 
 .contact-card {
-  background: white;
+  background-color: var(--color-light);
   padding: var(--spacing-lg);
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -2296,7 +2297,7 @@ strong {
 }
 
 .contact-card.newsletter {
-  background: linear-gradient(135deg, #e5f3ff, #fff8f3);
+  background-color: var(--color-light);
 }
 
 .contact-header {
@@ -2471,13 +2472,13 @@ strong {
 }
 
 .faq-answer {
-  max-height: 0;
+  display: none;
   overflow: hidden;
   transition: max-height 0.3s ease;
 }
 
 .faq-item.active .faq-answer {
-  max-height: 1000px;
+  display: block;
 }
 
 .faq-answer {
@@ -3370,7 +3371,13 @@ strong {
   );
 }
 
-/* En-tête de la page */
+.benevoles-header h1 {
+  text-align: left;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
 .page-header {
   text-align: center;
   margin-bottom: 5rem;
@@ -3379,15 +3386,9 @@ strong {
   margin-right: auto;
 }
 
-.page-header h1 {
-  color: var(--color-primary);
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-
 .page-subtitle {
-  color: var(--color-accent);
+  /*color: var(--color-accent);*/
+  text-align: left;
   font-size: 1.3rem;
   margin-bottom: 2rem;
   font-weight: 600;
@@ -3553,6 +3554,14 @@ strong {
 }
 
 /* Utility classes */
+.pt-6 {
+  padding-top: 6rem;
+}
+
+.pb-4 {
+  padding-bottom: 4rem;
+}
+
 .bg-light {
   background: var(--color-light);
 }

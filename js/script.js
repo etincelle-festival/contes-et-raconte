@@ -90,7 +90,6 @@ const searchInput = document.querySelector('.search-input');
 if (searchInput) {
   searchInput.addEventListener('input', (e) => {
     const searchTerm = e.target.value.toLowerCase();
-    console.log('searchTerm', searchTerm);
 
     eventItems.forEach((item) => {
       const title = item.querySelector('h3')?.textContent.toLowerCase() || '';
@@ -104,11 +103,6 @@ if (searchInput) {
         title.includes(searchTerm) ||
         artist.includes(searchTerm) ||
         description.includes(searchTerm);
-
-      console.log('matches', matches);
-      if (searchTerm === 'bi') {
-        console.log('artist', artist);
-      }
 
       if (matches || searchTerm === '') {
         item.style.display = 'block';
