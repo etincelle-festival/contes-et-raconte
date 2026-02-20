@@ -1,343 +1,454 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Découvrez le Festival Contes et Raconte - 3ème édition 2026 à St Germain du Puch">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Découvrez le Festival Contes et Raconte - 3ème édition 2026 à St Germain du Puch"
+    />
     <title>Le Festival | Contes et Raconte 2026</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/templates/menu.js"></script>
+    <script src="js/templates/footer.js"></script>
+  </head>
+  <body>
     <!-- Header -->
     <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-brand">
-                    <a href="index.html">
-                        <h1>Contes & Raconte</h1>
-                        <span class="edition">3ème édition - 2026</span>
-                    </a>
-                </div>
-                <button class="menu-toggle" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <ul class="nav-menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="programme.html">Programme</a></li>
-                    <li><a href="artistes.html" class="active">Les Artistes</a></li>
-                    <li><a href="infos-pratiques.html">Infos Pratiques</a></li>
-                    <li><a href="benevoles.html">Bénévoles</a></li>
-                    <li><a href="partenaires.html">Partenaires</a></li>
-                    <!--<li><a href="https://www.helloasso.com/associations/etincelle33/evenements/festival-contes-et-raconte" target="_blank" class="btn-reserve">Réserver</a></li>-->
-                </ul>
-            </div>
-        </nav>
+      <menu-component></menu-component>
     </header>
 
     <!-- Hero Section -->
-    <section class="page-hero" style="background: linear-gradient(135deg, #FF8A65, #FFB74D);">
-        <div class="container">
-            <h1 class="page-title">Le Festival</h1>
-            <p class="page-subtitle">Une aventure humaine et artistique unique en Gironde</p>
-        </div>
+    <section
+      class="page-hero"
+      style="background: linear-gradient(135deg, #ff8a65, #ffb74d)"
+    >
+      <div class="container">
+        <h1 class="page-title">Le Festival</h1>
+        <p class="page-subtitle">
+          Une aventure humaine et artistique unique en Gironde
+        </p>
+      </div>
     </section>
 
     <!-- Édito Section -->
     <section class="section">
-        <div class="container">
-            <div class="edito-content">
-                <div class="quote-large">
-                    <blockquote>
-                        « Les nuits sont encore longues. Réchauffons nos cœurs avec des histoires. »
-                        <cite>— Henri Gougaud</cite>
-                    </blockquote>
-                </div>
+      <div class="container">
+        <div class="edito-content">
+          <div class="quote-large">
+            <blockquote>
+              « Les nuits sont encore longues. Réchauffons nos cœurs avec des
+              histoires. »
+              <cite>— Henri Gougaud</cite>
+            </blockquote>
+          </div>
 
-                <div class="edito-text">
-                    <h2>Édito</h2>
-                    <p>Pour sa <strong>3ème édition</strong>, notre festival se réinvente pour vous offrir encore plus de découvertes, d'émotions et de surprises.</p>
-                    
-                    <p>Des conteurs d'ici et d'ailleurs, nous feront la joie de leur présence. Du plus loin pour <strong>Gigi Bigot</strong>, <strong>Colette Migné</strong>, <strong>Pépito Matéo</strong> au plus près avec <strong>Monia Lyorit</strong>, <strong>Marie Pustetto</strong> et <strong>Josiane Millot</strong>.</p>
-                    
-                    <p>L'art de raconter se mêlera à la magie des rencontres et du partage. Différentes formes de racontées seront mises à l'honneur, des <strong>contes en cercle</strong> aux <strong>visites contées</strong> autour des œuvres de <strong>Béatrice Elso</strong>, des <strong>conférences</strong> aux <strong>stages</strong>, des <strong>ateliers</strong> aux <strong>spectacles</strong>.</p>
-                    
-                    <p><strong>'Contes et raconte'</strong> se déploie dorénavant sur plusieurs mois, de <strong>janvier à avril 2026</strong>, explorant de nouveaux espaces vers les structures éducatives et culturelles du territoire, engageant des temps de formation, d'échange et de partage auprès des conteurs invités.</p>
-                    
-                    <p>Nous avons à cœur d'ouvrir de nouvelles voies aux conteurs à la rencontre du public et d'offrir des opportunités propices à la magie du conte, aux spectateurs des plus jeunes aux plus âgés.</p>
-                    
-                    <p>Toute une équipe travaille autour de ce projet toute l'année, pour vous emmener en voyage, là où le fantastique, l'illusion, l'irréel, le rêve nous visitent, à la rencontre de personnages extraordinaires, pour vivre ensemble les plus belles émotions.</p>
-                    
-                    <div class="cta-box">
-                        <p><strong>Alors, laissez-vous guider et embarquez avec nous dans cette traversée au pays des contes !</strong></p>
-                    </div>
-                </div>
+          <div class="edito-text">
+            <h2>Édito</h2>
+            <p>
+              Pour sa <strong>3ème édition</strong>, notre festival se réinvente
+              pour vous offrir encore plus de découvertes, d'émotions et de
+              surprises.
+            </p>
+
+            <p>
+              Des conteurs d'ici et d'ailleurs, nous feront la joie de leur
+              présence. Du plus loin pour <strong>Gigi Bigot</strong>,
+              <strong>Colette Migné</strong>, <strong>Pépito Matéo</strong> au
+              plus près avec <strong>Monia Lyorit</strong>,
+              <strong>Marie Pustetto</strong> et
+              <strong>Josiane Millot</strong>.
+            </p>
+
+            <p>
+              L'art de raconter se mêlera à la magie des rencontres et du
+              partage. Différentes formes de racontées seront mises à l'honneur,
+              des <strong>contes en cercle</strong> aux
+              <strong>visites contées</strong> autour des œuvres de
+              <strong>Béatrice Elso</strong>, des
+              <strong>conférences</strong> aux <strong>stages</strong>, des
+              <strong>ateliers</strong> aux <strong>spectacles</strong>.
+            </p>
+
+            <p>
+              <strong>'Contes et raconte'</strong> se déploie dorénavant sur
+              plusieurs mois, de <strong>janvier à avril 2026</strong>,
+              explorant de nouveaux espaces vers les structures éducatives et
+              culturelles du territoire, engageant des temps de formation,
+              d'échange et de partage auprès des conteurs invités.
+            </p>
+
+            <p>
+              Nous avons à cœur d'ouvrir de nouvelles voies aux conteurs à la
+              rencontre du public et d'offrir des opportunités propices à la
+              magie du conte, aux spectateurs des plus jeunes aux plus âgés.
+            </p>
+
+            <p>
+              Toute une équipe travaille autour de ce projet toute l'année, pour
+              vous emmener en voyage, là où le fantastique, l'illusion,
+              l'irréel, le rêve nous visitent, à la rencontre de personnages
+              extraordinaires, pour vivre ensemble les plus belles émotions.
+            </p>
+
+            <div class="cta-box">
+              <p>
+                <strong
+                  >Alors, laissez-vous guider et embarquez avec nous dans cette
+                  traversée au pays des contes !</strong
+                >
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Édition 2026 -->
     <section class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Édition 2026</h2>
-            <p class="section-subtitle">Un festival qui se réinvente</p>
+      <div class="container">
+        <h2 class="section-title">Édition 2026</h2>
+        <p class="section-subtitle">Un festival qui se réinvente</p>
 
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📅</div>
-                    <h3>4 mois de festival</h3>
-                    <p>De janvier à avril 2026, le festival s'étend sur plusieurs mois pour vous offrir plus de moments magiques.</p>
-                </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">📅</div>
+            <h3>4 mois de festival</h3>
+            <p>
+              De janvier à avril 2026, le festival s'étend sur plusieurs mois
+              pour vous offrir plus de moments magiques.
+            </p>
+          </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">🎭</div>
-                    <h3>6 conteurs invités</h3>
-                    <p>Des artistes reconnus venus de toute la France pour partager leur art et leur passion.</p>
-                </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎭</div>
+            <h3>6 conteurs invités</h3>
+            <p>
+              Des artistes reconnus venus de toute la France pour partager leur
+              art et leur passion.
+            </p>
+          </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>2 expositions</h3>
-                    <p>Les œuvres de Béatrice Elso et les créations brodées de Bettina Braley et Brigitte Salmon.</p>
-                </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎨</div>
+            <h3>2 expositions</h3>
+            <p>
+              Les œuvres de Béatrice Elso et les créations brodées de Bettina
+              Braley et Brigitte Salmon.
+            </p>
+          </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">✍️</div>
-                    <h3>Ateliers d'écriture</h3>
-                    <p>Avec Brigitte Salmon, pour tous ceux qui veulent jouer avec les mots et les histoires.</p>
-                </div>
+          <div class="feature-card">
+            <div class="feature-icon">✍️</div>
+            <h3>Ateliers d'écriture</h3>
+            <p>
+              Avec Brigitte Salmon, pour tous ceux qui veulent jouer avec les
+              mots et les histoires.
+            </p>
+          </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">🌳</div>
-                    <h3>La maison des bois</h3>
-                    <p>Une installation immersive unique à explorer avec tous vos sens.</p>
-                </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌳</div>
+            <h3>La maison des bois</h3>
+            <p>
+              Une installation immersive unique à explorer avec tous vos sens.
+            </p>
+          </div>
 
-                <div class="feature-card">
-                    <div class="feature-icon">👥</div>
-                    <h3>Pour tous les âges</h3>
-                    <p>Des spectacles et animations adaptés à tous les publics, de 2 à 99 ans.</p>
-                </div>
-            </div>
+          <div class="feature-card">
+            <div class="feature-icon">👥</div>
+            <h3>Pour tous les âges</h3>
+            <p>
+              Des spectacles et animations adaptés à tous les publics, de 2 à 99
+              ans.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- L'Association Etincelle -->
     <section class="section">
-        <div class="container">
-            <div class="association-content">
-                <h2 class="section-title">L'Association Etincelle</h2>
-                <p class="section-subtitle">Porteuse du festival</p>
+      <div class="container">
+        <div class="association-content">
+          <h2 class="section-title">L'Association Etincelle</h2>
+          <p class="section-subtitle">Porteuse du festival</p>
 
-                <div class="association-grid">
-                    <div class="association-text">
-                        <h3>Notre mission</h3>
-                        <p>L'<strong>Association Etincelle</strong> œuvre toute l'année pour promouvoir l'art du conte et développer l'oralité sur le territoire de St Germain du Puch et au-delà.</p>
-                        
-                        <p>Au-delà du festival, nous proposons :</p>
-                        <ul class="check-list">
-                            <li><strong>Des Cercles Conteurs mensuels</strong> pour adultes, inspirés du dispositif de Suzy Platiel</li>
-                            <li><strong>Des médiations en milieu scolaire</strong> animées par Marie Pustetto</li>
-                            <li><strong>Des formations</strong> pour les conteurs professionnels et amateurs</li>
-                            <li><strong>Des événements ponctuels</strong> tout au long de l'année</li>
-                        </ul>
+          <div class="association-grid">
+            <div class="association-text">
+              <h3>Notre mission</h3>
+              <p>
+                L'<strong>Association Etincelle</strong> œuvre toute l'année
+                pour promouvoir l'art du conte et développer l'oralité sur le
+                territoire de St Germain du Puch et au-delà.
+              </p>
 
-                        <h3>Contes en cercle</h3>
-                        <p>"Contes en cercle" est librement inspiré du dispositif des cercles conteurs, initiés par <strong>Suzy Platiel</strong>. L'association Etincelle y est très sensible.</p>
-                        
-                        <p>Dans le cadre de ces propositions de médiation en milieu scolaire, elle propose ce dispositif animé par <strong>Marie Pustetto</strong>. C'est tout naturellement qu'elle a initié, il y a 2 ans, un <strong>Cercle Conteur pour adultes</strong>.</p>
-                        
-                        <p>Les participants se retrouvent une fois par mois pour partager des histoires, construire un répertoire commun dans lequel ils voyagent en oralité, en toute liberté, en toute singularité.</p>
-                    </div>
+              <p>Au-delà du festival, nous proposons :</p>
+              <ul class="check-list">
+                <li>
+                  <strong>Des Cercles Conteurs mensuels</strong> pour adultes,
+                  inspirés du dispositif de Suzy Platiel
+                </li>
+                <li>
+                  <strong>Des médiations en milieu scolaire</strong> animées par
+                  Marie Pustetto
+                </li>
+                <li>
+                  <strong>Des formations</strong> pour les conteurs
+                  professionnels et amateurs
+                </li>
+                <li>
+                  <strong>Des événements ponctuels</strong> tout au long de
+                  l'année
+                </li>
+              </ul>
 
-                    <div class="association-sidebar">
-                        <div class="info-box">
-                            <h4>Nous contacter</h4>
-                            <p><strong>Email :</strong><br>
-                            <a href="mailto:asso-etincelle@orange.fr">asso-etincelle@orange.fr</a></p>
-                            
-                            <p><strong>Site web :</strong><br>
-                            <a href="http://assoetincelle.jimdo.com" target="_blank">assoetincelle.jimdo.com</a></p>
-                            
-                            <p><strong>Instagram :</strong><br>
-                            <a href="https://www.instagram.com/festival_contes_et_raconte" target="_blank">@festival_contes_et_raconte</a></p>
-                        </div>
+              <h3>Contes en cercle</h3>
+              <p>
+                "Contes en cercle" est librement inspiré du dispositif des
+                cercles conteurs, initiés par <strong>Suzy Platiel</strong>.
+                L'association Etincelle y est très sensible.
+              </p>
 
-                        <div class="info-box">
-                            <h4>L'équipe du festival</h4>
-                            <p><strong>Direction & Production :</strong><br>
-                            Association Etincelle</p>
-                            
-                            <p><strong>Programmation artistique :</strong><br>
-                            Myriam Rueff</p>
-                            
-                            <p><strong>Communication :</strong><br>
-                            Sophie Metsemakers</p>
-                            
-                            <p><strong>Affiche :</strong><br>
-                            Maud Langlois</p>
-                        </div>
+              <p>
+                Dans le cadre de ces propositions de médiation en milieu
+                scolaire, elle propose ce dispositif animé par
+                <strong>Marie Pustetto</strong>. C'est tout naturellement
+                qu'elle a initié, il y a 2 ans, un
+                <strong>Cercle Conteur pour adultes</strong>.
+              </p>
 
-                        <div class="cta-card">
-                            <h4>Rejoignez-nous !</h4>
-                            <p>Vous souhaitez participer à l'aventure en tant que bénévole ou adhérent ?</p>
-                            <a href="mailto:asso-etincelle@orange.fr" class="btn btn-primary">Nous contacter</a>
-                        </div>
-                    </div>
-                </div>
+              <p>
+                Les participants se retrouvent une fois par mois pour partager
+                des histoires, construire un répertoire commun dans lequel ils
+                voyagent en oralité, en toute liberté, en toute singularité.
+              </p>
             </div>
+
+            <div class="association-sidebar">
+              <div class="info-box">
+                <h4>Nous contacter</h4>
+                <p>
+                  <strong>Email :</strong><br />
+                  <a href="mailto:asso-etincelle@orange.fr"
+                    >asso-etincelle@orange.fr</a
+                  >
+                </p>
+
+                <p>
+                  <strong>Site web :</strong><br />
+                  <a href="http://assoetincelle.jimdo.com" target="_blank"
+                    >assoetincelle.jimdo.com</a
+                  >
+                </p>
+
+                <p>
+                  <strong>Instagram :</strong><br />
+                  <a
+                    href="https://www.instagram.com/festival_contes_et_raconte"
+                    target="_blank"
+                    >@festival_contes_et_raconte</a
+                  >
+                </p>
+              </div>
+
+              <div class="info-box">
+                <h4>L'équipe du festival</h4>
+                <p>
+                  <strong>Direction & Production :</strong><br />
+                  Association Etincelle
+                </p>
+
+                <p>
+                  <strong>Programmation artistique :</strong><br />
+                  Myriam Rueff
+                </p>
+
+                <p>
+                  <strong>Communication :</strong><br />
+                  Sophie Metsemakers
+                </p>
+
+                <p>
+                  <strong>Affiche :</strong><br />
+                  Maud Langlois
+                </p>
+              </div>
+
+              <div class="cta-card">
+                <h4>Rejoignez-nous !</h4>
+                <p>
+                  Vous souhaitez participer à l'aventure en tant que bénévole ou
+                  adhérent ?
+                </p>
+                <a
+                  href="mailto:asso-etincelle@orange.fr"
+                  class="btn btn-primary"
+                  >Nous contacter</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Lieu du festival -->
     <section class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Le Lieu</h2>
-            <p class="section-subtitle">St Germain du Puch, un écrin pour le festival</p>
+      <div class="container">
+        <h2 class="section-title">Le Lieu</h2>
+        <p class="section-subtitle">
+          St Germain du Puch, un écrin pour le festival
+        </p>
 
-            <div class="lieu-content">
-                <div class="lieu-card">
-                    <h3>🏛️ Salle Antoine Arieu</h3>
-                    <p>Lieu principal du festival, la salle Antoine Arieu accueille la plupart des spectacles, expositions et animations.</p>
-                    <p><strong>Adresse :</strong> St Germain du Puch, 33750</p>
-                    <p><strong>Capacité :</strong> Jauge adaptée selon les événements</p>
-                </div>
+        <div class="lieu-content">
+          <div class="lieu-card">
+            <h3>🏛️ Salle Antoine Arieu</h3>
+            <p>
+              Lieu principal du festival, la salle Antoine Arieu accueille la
+              plupart des spectacles, expositions et animations.
+            </p>
+            <p><strong>Adresse :</strong> St Germain du Puch, 33750</p>
+            <p>
+              <strong>Capacité :</strong> Jauge adaptée selon les événements
+            </p>
+          </div>
 
-                <div class="lieu-card">
-                    <h3>📚 Bibliothèque municipale</h3>
-                    <p>Les ateliers d'écriture avec Brigitte Salmon se déroulent dans ce lieu convivial et propice à la créativité.</p>
-                    <p><strong>Adresse :</strong> Place de la mairie, 33750 St Germain du Puch</p>
-                    <p><strong>Contact :</strong> 05 57 24 51 19 / 06 74 29 36 34</p>
-                </div>
+          <div class="lieu-card">
+            <h3>📚 Bibliothèque municipale</h3>
+            <p>
+              Les ateliers d'écriture avec Brigitte Salmon se déroulent dans ce
+              lieu convivial et propice à la créativité.
+            </p>
+            <p>
+              <strong>Adresse :</strong> Place de la mairie, 33750 St Germain du
+              Puch
+            </p>
+            <p><strong>Contact :</strong> 05 57 24 51 19 / 06 74 29 36 34</p>
+          </div>
 
-                <div class="lieu-card">
-                    <h3>🌳 Salle annexe</h3>
-                    <p>"La maison des bois", installation immersive, prend place dans la salle annexe derrière la salle Antoine Arieu.</p>
-                    <p><strong>Visites guidées :</strong> Samedi 4 avril (plusieurs créneaux disponibles)</p>
-                </div>
-            </div>
-
-            <div class="map-placeholder">
-                <p>📍 St Germain du Puch se situe à 15 minutes de Libourne et 30 minutes de Bordeaux</p>
-                <p><em>Plan d'accès détaillé disponible sur la page <a href="infos-pratiques.html">Infos Pratiques</a></em></p>
-            </div>
+          <div class="lieu-card">
+            <h3>🌳 Salle annexe</h3>
+            <p>
+              "La maison des bois", installation immersive, prend place dans la
+              salle annexe derrière la salle Antoine Arieu.
+            </p>
+            <p>
+              <strong>Visites guidées :</strong> Samedi 4 avril (plusieurs
+              créneaux disponibles)
+            </p>
+          </div>
         </div>
+
+        <div class="map-placeholder">
+          <p>
+            📍 St Germain du Puch se situe à 15 minutes de Libourne et 30
+            minutes de Bordeaux
+          </p>
+          <p>
+            <em
+              >Plan d'accès détaillé disponible sur la page
+              <a href="infos-pratiques.html">Infos Pratiques</a></em
+            >
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Nos valeurs -->
     <section class="section">
-        <div class="container">
-            <h2 class="section-title">Nos Valeurs</h2>
-            <p class="section-subtitle">Ce qui nous anime</p>
+      <div class="container">
+        <h2 class="section-title">Nos Valeurs</h2>
+        <p class="section-subtitle">Ce qui nous anime</p>
 
-            <div class="values-grid">
-                <div class="value-card">
-                    <div class="value-icon">💬</div>
-                    <h3>L'oralité</h3>
-                    <p>Le conte est avant tout un art de la parole vivante. Nous défendons cette tradition millénaire et sa transmission.</p>
-                </div>
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">💬</div>
+            <h3>L'oralité</h3>
+            <p>
+              Le conte est avant tout un art de la parole vivante. Nous
+              défendons cette tradition millénaire et sa transmission.
+            </p>
+          </div>
 
-                <div class="value-card">
-                    <div class="value-icon">🤝</div>
-                    <h3>Le partage</h3>
-                    <p>Créer des espaces de rencontre et d'échange entre artistes et publics, entre générations, entre cultures.</p>
-                </div>
+          <div class="value-card">
+            <div class="value-icon">🤝</div>
+            <h3>Le partage</h3>
+            <p>
+              Créer des espaces de rencontre et d'échange entre artistes et
+              publics, entre générations, entre cultures.
+            </p>
+          </div>
 
-                <div class="value-card">
-                    <div class="value-icon">🌟</div>
-                    <h3>L'émerveillement</h3>
-                    <p>Offrir des moments magiques où l'imaginaire reprend ses droits et où chacun peut rêver.</p>
-                </div>
+          <div class="value-card">
+            <div class="value-icon">🌟</div>
+            <h3>L'émerveillement</h3>
+            <p>
+              Offrir des moments magiques où l'imaginaire reprend ses droits et
+              où chacun peut rêver.
+            </p>
+          </div>
 
-                <div class="value-card">
-                    <div class="value-icon">🎨</div>
-                    <h3>La créativité</h3>
-                    <p>Encourager la création artistique sous toutes ses formes : conte, écriture, arts visuels, installations.</p>
-                </div>
+          <div class="value-card">
+            <div class="value-icon">🎨</div>
+            <h3>La créativité</h3>
+            <p>
+              Encourager la création artistique sous toutes ses formes : conte,
+              écriture, arts visuels, installations.
+            </p>
+          </div>
 
-                <div class="value-card">
-                    <div class="value-icon">👶</div>
-                    <h3>L'accessibilité</h3>
-                    <p>Proposer une programmation adaptée à tous les âges et maintenir des tarifs accessibles.</p>
-                </div>
+          <div class="value-card">
+            <div class="value-icon">👶</div>
+            <h3>L'accessibilité</h3>
+            <p>
+              Proposer une programmation adaptée à tous les âges et maintenir
+              des tarifs accessibles.
+            </p>
+          </div>
 
-                <div class="value-card">
-                    <div class="value-icon">🌍</div>
-                    <h3>Le territoire</h3>
-                    <p>Dynamiser la vie culturelle locale et créer du lien sur notre territoire rural.</p>
-                </div>
-            </div>
+          <div class="value-card">
+            <div class="value-icon">🌍</div>
+            <h3>Le territoire</h3>
+            <p>
+              Dynamiser la vie culturelle locale et créer du lien sur notre
+              territoire rural.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Call to Action -->
     <section class="cta-section">
-        <div class="container">
-            <h2>Prêts pour l'aventure ?</h2>
-            <p>Découvrez le programme complet et réservez vos places dès maintenant !</p>
-            <div class="cta-buttons">
-                <a href="programme.html" class="btn btn-primary btn-lg">Voir le programme</a>
-                <a href="https://www.helloasso.com/associations/etincelle33/evenements/festival-contes-et-raconte" target="_blank" class="btn btn-secondary btn-lg">Réserver mes places</a>
-            </div>
+      <div class="container">
+        <h2>Prêts pour l'aventure ?</h2>
+        <p>
+          Découvrez le programme complet et réservez vos places dès maintenant !
+        </p>
+        <div class="cta-buttons">
+          <a href="programme.html" class="btn btn-primary">Voir le programme</a>
+          <a
+            href="https://www.helloasso.com/associations/etincelle33/evenements/festival-contes-et-raconte"
+            target="_blank"
+            class="btn btn-secondary"
+            >Réserver mes places</a
+          >
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Festival Contes et Raconte</h3>
-                    <p>3ème édition - 2026<br>
-                    St Germain du Puch (33750)</p>
-                    <p>Organisé par l'Association Etincelle</p>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Navigation</h3>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="festival.html">Le Festival</a></li>
-                        <li><a href="programme.html">Programme</a></li>
-                        <li><a href="artistes.html">Les Artistes</a></li>
-                        <li><a href="infos-pratiques.html">Infos Pratiques</a></li>
-                        <li><a href="partenaires.html">Partenaires</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p>Email: <a href="mailto:asso-etincelle@orange.fr">asso-etincelle@orange.fr</a></p>
-                    <p>Réservations spectacles:<br><a href="tel:0789334063">07 89 33 40 63</a></p>
-                    <p>Réservations restauration:<br><a href="tel:0607164193">06 07 16 41 93</a></p>
-                    <div class="social-links">
-                        <a href="https://www.instagram.com/festival_contes_et_raconte" target="_blank" aria-label="Instagram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Infos pratiques</h3>
-                    <p><strong>Dates:</strong> Janvier à Avril 2026</p>
-                    <p><strong>Lieu principal:</strong><br>Salle Antoine Arieu<br>St Germain du Puch</p>
-                    <a href="https://www.helloasso.com/associations/etincelle33/evenements/festival-contes-et-raconte" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">Réserver</a>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 Association Etincelle - Festival Contes et Raconte | Tous droits réservés</p>
-                <p>Site web créé avec ❤️ pour le festival</p>
-            </div>
-        </div>
+      <footer-component></footer-component>
     </footer>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
