@@ -2159,6 +2159,10 @@ strong {
   flex-direction: column;
   gap: 0.75rem;
   margin-bottom: 1rem;
+
+  a {
+    justify-content: center;
+  }
 }
 
 /* Reservation Tips */
@@ -2677,6 +2681,7 @@ strong {
 .partenaire-card.wine {
   border-top: 4px solid var(--color-green);
   text-align: center;
+  padding: 3rem;
 }
 
 .partenaire-card.private {
@@ -2705,10 +2710,15 @@ strong {
 
 /* Content */
 .partenaire-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 17px;
+
   img {
     height: 120px;
     width: auto;
-    margin-bottom: 17px;
+    margin: 0 auto;
   }
 
   h3 {
@@ -3266,7 +3276,7 @@ strong {
 
 .map-placeholder {
   background: var(--color-bg);
-  padding: var(--spacing-lg);
+  padding: 1rem;
   border-radius: 15px;
   text-align: center;
   margin-top: var(--spacing-md);
