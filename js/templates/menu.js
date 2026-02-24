@@ -3,10 +3,12 @@ class MenuComponent extends HTMLElement {
     this.innerHTML = `
       <nav class="navbar">
         <div class="container">
-          <div class="nav-brand">
-            <h1>Contes & Raconte</h1>
-            <span class="edition">3ème édition - 2026</span>
-          </div>
+		  <a href="index.html" class="nav-brand">
+			<div class="nav-brand-container">
+				<h1>Contes & Raconte</h1>
+				<span class="edition">3ème édition - 2026</span>
+			</div>
+		  </a>
           <button class="menu-toggle" aria-label="Menu">
             <span></span>
             <span></span>
