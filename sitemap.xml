@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://etincelle-festival.github.io/contes-et-raconte/</loc>
+    <lastmod>2026-02-24</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://etincelle-festival.github.io/contes-et-raconte/programme.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://etincelle-festival.github.io/contes-et-raconte/artistes.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://etincelle-festival.github.io/contes-et-raconte/infos-pratiques.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://etincelle-festival.github.io/contes-et-raconte/benevoles.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://etincelle-festival.github.io/contes-et-raconte/partenaires.html</loc>
+    <lastmod>2026-02-24</lastmod>
+    <priority>0.6</priority>
+  </url>
+</urlset>
