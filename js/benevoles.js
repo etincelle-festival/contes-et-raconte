@@ -137,7 +137,7 @@ function getBenevoles() {
     },
     {
       id: 10,
-      nom: 'X',
+      nom: 'Bettina',
       role: 'Coordination Artistique',
       photo: 'images/x.jpg',
       description: `<p>Texte de présentation pour le huitième bénévole...</p>`,

@@ -617,6 +617,12 @@ strong {
   font-size: 1.35rem;
 }
 
+.event-info h4 {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-sm);
+  font-size: 1.1rem;
+}
+
 .event-artist {
   font-weight: 600;
   color: var(--color-secondary);
@@ -1355,12 +1361,13 @@ strong {
 }
 
 /* Section Artistes */
-.artistes-section,
-.other-artists-section {
-  padding: var(--spacing-xl) 0;
+.artistes-section {
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-sm);
 }
 
 .other-artists-section {
+  padding: var(--spacing-sm) 0;
   background: var(--color-bg);
 }
 
@@ -1370,7 +1377,7 @@ strong {
   /*grid-template-columns: 1fr 2fr;*/
   grid-template-columns: 1fr;
   gap: var(--spacing-lg);
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-md);
   background: var(--color-light);
   border-radius: 20px;
   padding: var(--spacing-lg);
