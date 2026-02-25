@@ -285,11 +285,7 @@ strong {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(
-    135deg,
-    var(--color-primary) 0%,
-    var(--color-secondary) 100%
-  );
+  background: var(--color-primary);
   background: url(../images/affiche_2026.jpg) no-repeat center;
   background-size: cover;
   overflow: hidden;
@@ -930,11 +926,7 @@ strong {
   align-items: center;
   gap: 1rem;
   padding: 1.5rem 2rem;
-  background: linear-gradient(
-    135deg,
-    var(--color-primary),
-    var(--color-primary-dark)
-  );
+  background: var(--color-primary);
   color: var(--color-light);
   border-radius: 15px;
   margin-bottom: var(--spacing-md);
@@ -990,11 +982,6 @@ strong {
   transform: translateY(-5px);
   border-color: var(--color-primary);
 }
-
-/*
-.event-card.featured {
-  border: 2px solid var(--color-primary);
-}*/
 
 .event-time {
   display: flex;
@@ -1243,12 +1230,12 @@ strong {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .filters-section {
-    top: 60px;
+  .hero {
+    background-position: top;
   }
 
-  .filter-buttons {
-    justify-content: flex-start;
+  .filters-section {
+    top: 60px;
   }
 
   .event-card {
@@ -2169,7 +2156,7 @@ strong {
 .reservation-tips {
   margin-top: var(--spacing-lg);
   padding: var(--spacing-lg);
-  background: linear-gradient(135deg, #e5f3ff, #e5ffe5);
+  background: var(--color-primary);
   border-radius: 20px;
 }
 
@@ -2942,7 +2929,7 @@ strong {
   max-width: 800px;
   margin: var(--spacing-lg) auto 0 auto;
   padding: var(--spacing-lg);
-  background: linear-gradient(135deg, #ffe5e5, #ffd4a8);
+  background: #ffd4a8;
   border-radius: 20px;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -3027,7 +3014,6 @@ strong {
 }
 
 .quote-large {
-  background: linear-gradient(135deg, #ffe5e5, #ffd4a8);
   padding: var(--spacing-lg);
   border-radius: 20px;
   margin-bottom: var(--spacing-lg);
@@ -3392,11 +3378,6 @@ strong {
 .benevoles-page {
   padding: 6rem 0 4rem;
   min-height: 100vh;
-  background: linear-gradient(
-    135deg,
-    var(--color-light) 0%,
-    rgba(255, 255, 255, 0.9) 100%
-  );
 }
 
 .benevoles-header h1 {
