@@ -299,17 +299,6 @@ strong {
   right: 0;
   bottom: 0;
   background-image: var(--color-bg);
-  background-image:
-    radial-gradient(
-      circle at 20% 50%,
-      rgba(232, 168, 124, 0.3) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 80% 80%,
-      rgba(139, 78, 63, 0.3) 0%,
-      transparent 50%
-    );
   animation: float 20s ease-in-out infinite;
 }
 
@@ -323,15 +312,6 @@ strong {
   }
 }
 
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
-}
-
 .hero-content {
   position: relative;
   z-index: 1;
@@ -340,7 +320,7 @@ strong {
   max-width: 900px;
   margin: 0 auto;
   border-radius: 2%;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.3);
   font-weight: bold;
 }
 
@@ -1238,6 +1218,8 @@ strong {
 @media (max-width: 768px) {
   .hero {
     background-position: top;
+    background-size: 100%;
+    min-height: 65vh;
   }
 
   .filters-section {
