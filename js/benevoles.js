@@ -74,73 +74,124 @@ function getBenevoles() {
     {
       id: 1,
       nom: 'Myriam',
-      role: 'Coordinateur/trice',
+      role: 'Programmation artistique et organisation',
       photo: 'images/myriam.jpg',
-      description: `<p>Votre texte de présentation pour le premier bénévole. Vous pouvez écrire plusieurs paragraphes pour décrire son parcours, sa motivation, son rôle dans le festival.</p>
-                        <p>Deuxième paragraphe si nécessaire pour donner plus de détails sur son engagement et ses actions.</p>`,
+      description: `<p>15 idées à la minute !!</p>
+                        <p>Meneuse de troupe avec l’énergie des prémices du printemps, elle sème des cailloux comme le
+                        petit Poucet.</p>`,
     },
     {
       id: 2,
       nom: 'Patrick',
-      role: 'Responsable Décoration',
+      role: 'Organisation',
       photo: 'images/patrick.jpg',
-      description: `<p>Texte de présentation pour le deuxième bénévole...</p>`,
+      description: `<p>"Le président"</p>
+                        <p>Véritable couteau suisse, il chausse ses bottes de sept lieux pour parcourir toutes les tâches des
+                        plus petites aux plus grandes.. Il sait tout faire et même plus encore.</p>`,
+    
     },
     {
       id: 3,
       nom: 'Brigitte',
-      role: 'Voix',
+      role: 'Organisation',
       photo: 'images/brigitte.jpg',
-      description: `<p>Texte de présentation pour le troisième bénévole...</p>`,
+      description: `<p>"La Voix"</p>
+                        <p>Elle passe avec talent des mots écrits aux mots brodés. Ses conseils avisés sauront vous conseiller
+      à la librairie. Une voix reconnaissable entre toutes..</p>`,
     },
     {
       id: 4,
       nom: 'Carole',
-      role: 'Cuisinière émerite',
+      role: 'Cuisine',
       photo: 'images/carole.jpg',
-      description: `<p>Texte de présentation pour le quatrième bénévole...</p>`,
+      description: `<p>Elle a le bleu des gens heureux, enthousiaste et enjouée. Une demande particulière en cuisine,
+      c’est à elle qu’il faut vous ’adresser !</p>`,
     },
     {
       id: 5,
-      nom: 'Annie',
-      role: 'Communication',
+      nom: 'Anny',
+      role: 'Cuisine',
       photo: 'images/annie.jpg',
-      description: `<p>Texte de présentation pour le cinquième bénévole...</p>`,
+      description: `<p>Solide comme un chêne et souple comme le roseau. Elle sait faire le grand écart entre la création
+      d’univers plastiques et les bons petits plats. Sa délicatesse ferait pâlir la princesse au petit pois !</p>`,
     },
     {
       id: 6,
       nom: 'Denyse',
-      role: 'Technique',
+      role: 'Réflexions',
       photo: 'images/denyse.jpg',
-      description: `<p>Texte de présentation pour le sixième bénévole...</p>`,
+      description: `<p>Elle pourrait être un conte en hiver, bien installée devant la cheminée. Œil avisé et critiques
+      aiguisées, c’est la maitresse des questions essentielles.</p>`,
     },
     {
       id: 7,
       nom: 'Didier',
-      role: 'Accueil',
+      role: 'Organisation et cuisine',
       photo: 'images/didier.jpg',
-      description: `<p>Texte de présentation pour le septième bénévole...</p>`,
+      description: `<p>Dans ses yeux, le bleu d’un ciel de printemps, sûrement ceux du Petit prince. Il glisse avec habileté
+      de l’organisation du festival à la cuisine, et nos papilles le remercient.</p>`,
     },
     {
       id: 8,
       nom: 'Hélène',
-      role: 'Coordination Artistique',
+      role: 'Cuisine',
       photo: 'images/helene.jpg',
-      description: `<p>Texte de présentation pour le huitième bénévole...</p>`,
+      description: `<p>Elle est rouge passion et intendante aux menus plaisirs. Cheffe des courses et de la cuisine avec
+      brio. Indispensable Hélène !</p>`,
     },
     {
       id: 9,
       nom: 'Mauricette',
-      role: 'Coordination Artistique',
+      role: 'Organisation de la buvette',
       photo: 'images/mauricette.jpg',
-      description: `<p>Texte de présentation pour le huitième bénévole...</p>`,
+      description: `<p>Vive comme une fleur de prairie, elle s’aventure à la buvette comme dans excel , conjugue
+      vaisselle et expertises scientifiques.</p>`,
     },
     {
       id: 10,
       nom: 'Bettina',
-      role: 'Coordination Artistique',
+      role: 'Organisation',
       photo: 'images/x.jpg',
-      description: `<p>Texte de présentation pour le huitième bénévole...</p>`,
+      description: `<p>Brodeuse et tricoteuse. Reine du chapeau dont nous sommes coiffés. Elle tire le fil des contes,
+      trace lignes et chemins sur lesquels elle a bien dû croiser le petit chaperon rouge.</p>`,
+    },
+    {
+      id: 11,
+      nom: 'Marie',
+      role: 'Organisation',
+      photo: 'images/Marie.jpg',
+      description: `<p>Maîtresse de cérémonie pour cette 3éme édition.</p> 
+                      <p>Elle présente avec brio artistes et spectacles. Son sourire vous ravira à la billetterie.</p>`,
+      
+    },
+    {
+      id: 12,
+      nom: 'Bénédicte',
+      role: 'Organisation',
+      photo: 'images/Bénédicte.jpg',
+      description: `<p>Accompagnatrice des bonnes idées, elle harmonise avec talent le service ou la vaisselle.
+      Cendrillon des temps modernes !</p>`,
+      
+    },
+
+    {
+      id: 13,
+      nom: 'Béatrice',
+      role: 'Intelligence collective "Canal historique"',
+      photo: 'images/.jpg',
+      description: `<p>Réflexions et actions se conjuguent pour animer les débats. Vous pourrez la trouver sur le stand
+      librairie..</p>`,
+      
+    },
+
+    {
+      id: 14,
+      nom: 'Sophie',
+      role: 'Communication',
+      photo: 'images/Sophie.png',
+      description: `<p>Le pouls du festival et des doigts de fée sur le clavier pour créer affiche et brochure, site et bande
+      annonce. Reine des pixels et des octets.</p>`,
+      
     },
   ];
 }
