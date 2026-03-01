@@ -907,22 +907,6 @@ strong {
   margin-bottom: var(--spacing-lg);
 }
 
-.month-title {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.5rem 2rem;
-  background: var(--color-primary);
-  color: var(--color-light);
-  border-radius: 15px;
-  margin-bottom: var(--spacing-md);
-  box-shadow: 0 4px 15px rgba(212, 118, 78, 0.2);
-}
-
-.month-icon {
-  font-size: 2rem;
-}
-
 /* Day Group */
 .day-group {
   margin-bottom: var(--spacing-lg);
@@ -1272,11 +1256,6 @@ strong {
 }
 
 @media (max-width: 480px) {
-  .month-title {
-    padding: 1rem 1.5rem;
-    font-size: 1.25rem;
-  }
-
   .day-header {
     padding: 0.75rem 1rem;
   }
@@ -1833,10 +1812,6 @@ strong {
   background-color: var(--color-light);
 }
 
-.info-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
 
 .info-card h3 {
   color: var(--color-primary);
@@ -1907,52 +1882,62 @@ strong {
 .tarif-card:hover {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
   transform: translateY(-5px);
+}
+
+.tarif-card.spectacle:hover,
+.tarif-card.spectacle-small:hover {
   border: 3px solid var(--color-primary);
 }
 
-/*
-.tarif-card.featured {
-  border: 3px solid var(--color-primary);
-}*/
+.tarif-card.soiree:hover {
+  border: 3px solid #6b2a8e;
+}
+
+.tarif-card.gratuit:hover,
+.tarif-card.installation:hover,
+.tarif-card.restauration:hover 
+{
+  border: 3px solid #27ae60;
+}
 
 .tarif-header {
   padding: 1.5rem;
   color: var(--color-light);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
 }
 
 .tarif-header h3 {
   margin: 0;
   font-size: 1.5rem;
+  text-align: center;
 }
 
-.tarif-header.spectacle {
-  background-color: var(--color-primary);
+.tarif-header span {
+  margin: 0 auto;
 }
 
+.tarif-header.spectacle,
 .tarif-header.spectacle-small {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
 
 .tarif-header.soiree {
   background-color: #6b2a8e;
 }
 
-.tarif-header.restauration {
-  background-color: var(--color-accent);
-}
-
-.tarif-header.installation {
-  background-color: #2d8b2d;
-}
-
-.tarif-header.gratuit {
+.tarif-header.gratuit,
+.tarif-header.installation,
+.tarif-header.restauration 
+{
   background-color: #27ae60;
 }
 
 .tarif-badge {
   display: inline-block;
-  margin-top: 0.5rem;
   padding: 0.4rem 0.8rem;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 20px;
@@ -2151,7 +2136,7 @@ strong {
 
 .reservation-tips h3 {
   text-align: center;
-  color: var(--color-dark);
+  color: var(--color-light);
   margin-bottom: 2rem;
   font-size: 1.75rem;
 }
@@ -2280,20 +2265,19 @@ strong {
 }
 
 .contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
   gap: var(--spacing-md);
 }
 
 .contact-card {
+  width: 50%;
   background-color: var(--color-light);
   padding: var(--spacing-lg);
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
-.contact-card.primary-contact {
-  grid-column: span 2;
+.contact-card:hover {
   border: 2px solid var(--color-primary);
 }
 
@@ -2334,17 +2318,18 @@ strong {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-}
 
-.contact-icon {
-  font-size: 1.5rem;
-  flex-shrink: 0;
+  > div {
+    display: flex;
+    gap: 12px;
+  }
 }
 
 .contact-item strong {
   display: block;
   color: var(--color-dark);
   margin-bottom: 0.25rem;
+  min-width: 80px;
 }
 
 .contact-item a {
@@ -2602,10 +2587,6 @@ strong {
   border-radius: 15px;
   margin-bottom: var(--spacing-lg);
   box-shadow: 0 4px 15px rgba(212, 118, 78, 0.2);
-}
-
-.category-icon {
-  font-size: 2rem;
 }
 
 .category-description {
@@ -2911,29 +2892,6 @@ strong {
 .credit-item p {
   color: var(--color-dark);
   font-weight: 600;
-}
-
-/* Volunteers Tribute */
-.volunteers-tribute {
-  max-width: 800px;
-  margin: var(--spacing-lg) auto 0 auto;
-  padding: var(--spacing-lg);
-  background: #ffd4a8;
-  border-radius: 20px;
-  text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-}
-
-.volunteers-tribute h3 {
-  color: var(--color-dark);
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-
-.tribute-message {
-  margin-top: 2rem;
-  font-size: 1.25rem;
-  color: var(--color-primary);
 }
 
 /* Responsive */
