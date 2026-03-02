@@ -432,6 +432,20 @@ strong {
   box-shadow: 0 5px 10px rgba(142, 142, 142, 0.3);
 }
 
+.btn-primary-outlined-inverted {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  border-color: var(--color-light);
+}
+
+.btn-primary-outlined-inverted:hover {
+  background-color: var(--color-light);
+  color: var(--color-primary);
+  border-color: var(--color-light);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
 .btn-secondary-inverted {
   background-color: var(--color-light);
   color: var(--color-primary);
@@ -634,6 +648,10 @@ strong {
   font-weight: 700;
   font-size: 1.125rem;
   align-self: flex-start;
+}
+
+.event-description {
+  text-align: justify;
 }
 
 /* ===================================
@@ -895,6 +913,20 @@ strong {
   background: var(--color-primary);
   color: var(--color-light);
   border-color: var(--color-primary);
+}
+
+@media (max-width: 900px) {
+  .filter-buttons {
+    justify-content: flex-start;
+    flex-wrap: inherit;
+    padding: 5px 0;
+    overflow: scroll;
+  }
+
+  .filter-btn {
+    padding: 0.5rem;
+    white-space: nowrap;
+  }
 }
 
 /* Programme Section */
@@ -1311,6 +1343,7 @@ strong {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  text-align: justify;
 }
 
 .intro-content .lead {
@@ -1812,7 +1845,6 @@ strong {
   background-color: var(--color-light);
 }
 
-
 .info-card h3 {
   color: var(--color-primary);
   margin-bottom: 1rem;
@@ -1895,8 +1927,7 @@ strong {
 
 .tarif-card.gratuit:hover,
 .tarif-card.installation:hover,
-.tarif-card.restauration:hover 
-{
+.tarif-card.restauration:hover {
   border: 3px solid #27ae60;
 }
 
@@ -1931,8 +1962,7 @@ strong {
 
 .tarif-header.gratuit,
 .tarif-header.installation,
-.tarif-header.restauration 
-{
+.tarif-header.restauration {
   background-color: #27ae60;
 }
 
@@ -2026,6 +2056,22 @@ strong {
   font-style: italic;
 }
 
+@media (max-width: 640px) {
+  .tarif-body {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tarif-body {
+    padding: 0.5rem;
+  }
+
+  .tarif-note ul {
+    padding-left: 0;
+  }
+}
+
 /* Reservations Section */
 .reservations-section {
   padding: var(--spacing-xl) 0;
@@ -2052,12 +2098,6 @@ strong {
   transform: translateY(-5px);
   border: 3px solid var(--color-primary);
 }
-
-/*
-.reservation-card.primary {
-  border: 3px solid var(--color-primary);
-  background-color: var(--color-light);
-}*/
 
 .reservation-icon {
   font-size: 3rem;
@@ -2475,6 +2515,7 @@ strong {
 .faq-answer p {
   margin: 0 0 1rem 0;
   line-height: 1.7;
+  text-align: justify;
 }
 
 .faq-answer ul {
@@ -2498,8 +2539,12 @@ strong {
     grid-template-columns: 1fr;
   }
 
-  .contact-card.primary-contact {
-    grid-column: span 1;
+  .contact-grid {
+    flex-direction: column;
+  }
+
+  .contact-card {
+    width: 100%;
   }
 }
 
@@ -2521,9 +2566,14 @@ strong {
     grid-template-columns: 1fr;
   }
 
-  .reservation-grid,
-  .contact-grid {
+  .reservation-grid {
     grid-template-columns: 1fr;
+  }
+
+  .faq-answer {
+    > ul {
+      padding-left: 0;
+    }
   }
 }
 
@@ -2560,6 +2610,10 @@ strong {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+
+  > p {
+    text-align: justify;
+  }
 }
 
 .thanks-content h2 {
@@ -2575,6 +2629,10 @@ strong {
 
 .partenaires-category {
   margin-bottom: var(--spacing-xl);
+}
+
+.partenaire-description {
+  text-align: justify;
 }
 
 .category-title {
@@ -2663,6 +2721,10 @@ strong {
   justify-content: center;
   color: var(--color-text);
   font-weight: 600;
+
+  > img {
+    max-height: 150px;
+  }
 }
 
 /* Content */
