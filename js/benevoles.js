@@ -178,7 +178,7 @@ function getBenevoles() {
       id: 13,
       nom: 'Béatrice',
       role: 'Intelligence collective "Canal historique"',
-      photo: 'images/.jpg',
+      photo: 'images/avatar_bea.jpg',
       description: `<p>Réflexions et actions se conjuguent pour animer les débats. Vous pourrez la trouver sur le stand
       librairie..</p>`,
       

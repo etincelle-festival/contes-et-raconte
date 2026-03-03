@@ -19,6 +19,7 @@
   --color-brown: #713600; /* <-- Palette 1 */
   --color-bg: #f2f2f0; /* <-- background page (et quote) */
   --color-green: #2e7d32; /* <-- Vert étencelle */
+  --color-green-light: #27ae60;
   --color-header: var(--color-bg); /* <-- menu */
 
   /* Typographie */
@@ -609,6 +610,12 @@ strong {
   color: var(--color-primary);
   margin-bottom: var(--spacing-sm);
   font-size: 1.35rem;
+  text-align: center;
+}
+
+.event-info h3.event-title-featured {
+  color: var(--color-green-light);
+  font-size: 1.65rem;
 }
 
 .event-info h4 {
