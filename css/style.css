@@ -571,11 +571,6 @@ strong {
   border: 2px solid var(--color-primary);
 }
 
-/*
-.event-card.featured {
-  border: 2px solid var(--color-accent);
-}*/
-
 .event-date {
   background-color: var(--color-primary);
   color: var(--color-light);
@@ -604,6 +599,10 @@ strong {
   flex: 1;
   display: flex;
   flex-direction: column;
+
+  > p > a {
+    color: var(--color-green);
+  }
 }
 
 .event-info h3 {
@@ -862,6 +861,12 @@ strong {
   position: sticky;
   top: 70px;
   z-index: 100;
+  height: 100px;
+  overflow: hidden;
+}
+
+.filters-section:hover {
+  height: 100%;
 }
 
 .filters-wrapper {
