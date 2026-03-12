@@ -49,7 +49,8 @@ class FooterComponent extends HTMLElement {
 
         <div class="footer-bottom">
           <p>&copy; 2026 Association Etincelle - Tous droits réservés</p>
-          <p>
+          <p>Registre National des Associations : W335000843</p>
+		  <p>
             Affiche : Maud Langlois
           </p>
         </div>
