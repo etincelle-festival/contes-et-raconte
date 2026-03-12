@@ -7,6 +7,7 @@ class FooterComponent extends HTMLElement {
             <h3>Festival Contes et Raconte</h3>
             <p>Association Etincelle</p>
             <p>St Germain du Puch - 33750</p>
+			<p>RNA : W335000843</p>
           </div>
 
           <div class="footer-col">
@@ -49,7 +50,6 @@ class FooterComponent extends HTMLElement {
 
         <div class="footer-bottom">
           <p>&copy; 2026 Association Etincelle - Tous droits réservés</p>
-          <p>Registre National des Associations : W335000843</p>
 		  <p>
             Affiche : Maud Langlois
           </p>
